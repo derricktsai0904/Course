@@ -11,7 +11,8 @@
 
 ```
 以上語法呈現結果如下
-<hr>
+<hr><br>
+
 |      履歷        |<img src="https://avatars.githubusercontent.com/u/22648375?v=4" width=100 height=100/>|
 | ---------------- |:-----------------------------:|
 | 姓名             | 蔡正雄                  |
