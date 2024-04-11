@@ -79,6 +79,8 @@ d
 e
 ~~~
 </blockquote></details>
+</blockquote></details>
+</blockquote></details>
 ```
 
 以上語法呈現結果如下<br>
@@ -95,7 +97,7 @@ e
 ~~~
 </blockquote></details>
 </blockquote></details>
- </blockquote></details>
+</blockquote></details>
 
 <br><br>
 
