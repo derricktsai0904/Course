@@ -13,6 +13,24 @@
 
 <img src="https://github.com/derricktsai0904/Course/blob/main/2024.02%20%E6%99%BA%E6%85%A7%E5%9F%8E%E5%B8%82%E5%B0%8E%E8%AB%96/2024.04.26%20%E7%AC%AC%E5%85%AB%E5%A0%82/003.jpg" width=800 height=500 />
 
-#
+# 何謂智慧農業?
+以現行產業生產模式為基礎，因應消費市場需求進行產銷規劃，生產管理上輔以省工省力機械設備、輔具及感測元件的研發應用，並結合跨領域之資通訊技術(ICT)、物聯網(IoT)、大數據(Big Data)分析、區塊鏈(Block Chain) 等前瞻技術導入，減輕農場作業負擔降低勞動力需求，提供農民更有效率的農場經營管理模式，生產符合消費者需求，安全、安心及可追溯的農產品。
+
+# 概念與技術
+智慧農業主要運用物聯網的概念與技術，在農場既有的實體物件如農機具、農業設施、土壤、作物等，導入感測元件(如：生物感測、環境感測及影像辨識等)，並結合無線通訊科技，將蒐集與擷取到的感測數據(如：溫溼度、光度、二氧化碳、土壤濕度、蟲害等)上傳至雲端資料庫。更結合消費市場需求與商情資料蒐集，透過大數據資料探勘、整合及分析，將數據轉換為農業經營有用的資訊，提供農場管理者進行產銷規劃、生產管理及顧客服務等經營決策判斷參考，協助產銷過程的智慧監控，減輕農場作業負擔降低勞動力需求，建立更有效率的農場經營管理模式，生產符合消費者需求，安全、安心及可追溯的農產品。
+
+<img src="https://github.com/derricktsai0904/Course/blob/main/2024.02%20%E6%99%BA%E6%85%A7%E5%9F%8E%E5%B8%82%E5%B0%8E%E8%AB%96/2024.04.26%20%E7%AC%AC%E5%85%AB%E5%A0%82/004.jpg" width=800 height=500 />
+
+# 智慧農業與物聯網
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=sG0Hluj--LA" target="_blank"><img src="http://img.youtube.com/vi/sG0Hluj--LA/0.jpg" 
+alt="智慧農業" width="800" height="400" border="10" /></a>
+<br>影片取自 youtube
+
+<br><br>
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=1Asf2yRIwlo" target="_blank"><img src="http://img.youtube.com/vi/1Asf2yRIwlo/0.jpg" 
+alt="智慧農業" width="800" height="400" border="10" /></a>
+<br>影片取自 youtube
+
 
 
