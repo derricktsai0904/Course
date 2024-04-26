@@ -77,6 +77,11 @@ alt="智慧農業" width="800" height="400" border="10" /></a>
 
 # 無人植保機
 <br>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=E3ii1zube_A" target="_blank"><img src="http://img.youtube.com/vi/E3ii1zube_A/0.jpg" 
+alt="無人植保機2" width="500" height="300" border="10" /></a>
+<br>影片取自 youtube
+
+<br>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=zd5Pu4SRdtA" target="_blank"><img src="http://img.youtube.com/vi/zd5Pu4SRdtA/0.jpg" 
 alt="無人植保機1 width="500" height="300" border="10" /></a>
 <br>影片取自 youtube
@@ -85,5 +90,7 @@ alt="無人植保機1 width="500" height="300" border="10" /></a>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=QZSXqZXqxA8" target="_blank"><img src="http://img.youtube.com/vi/QZSXqZXqxA8/0.jpg" 
 alt="無人植保機2" width="500" height="300" border="10" /></a>
 <br>影片取自 youtube
+
+
 
 
