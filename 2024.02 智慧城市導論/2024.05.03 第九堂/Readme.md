@@ -42,9 +42,13 @@ alt="智慧農業" width="800" height="400" border="10" /></a>
 alt="智慧農業" width="800" height="400" border="10" /></a>
 <br>影片取自 youtube
 
+# 植物工廠
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=A3ly29xttYI" target="_blank"><img src="http://img.youtube.com/vi/A3ly29xttYI/0.jpg" 
+alt="智慧農業" width="800" height="400" border="10" /></a>
+<br>影片取自 youtube
 
+<br><br><br><br><br>
 # 智慧零售
-
 智慧零售是零售業邁向產業升級的一環，以商店數位化為首，包括了行動支付、物聯網技術、無人智慧商店、會員數據分析等多種面向的數位升級。透過線上官網、會員APP、購物平台等管道蒐羅客戶購買習慣，優化消費者購買流程與服務體驗，建立起零售業智慧管理系統。
 對於第一線的實體店面來說，除了優化營運模式外，需要以智慧零售商店為目標邁進，為顧客帶來快速便利、即時服務、精準行銷等多項價值，並將庫存資料、商品標籤相關訊息上傳雲端，減輕店員庫存管理、價格變更的負擔，進一步促進商店與顧客間的互動，提供高品質的消費體驗。
 
@@ -61,13 +65,13 @@ RFID中文名叫無線射頻識別系統，悠遊卡正是使用此技術感應�
 OMO（Online merge Offline）是整合虛擬及實體商店的行銷模式，取代原先O2O將客人導流至實體店面的模式，更把重點放在線上與實體客戶的資料整合，分析客群輪廓並分析購買行為，做到個性化銷售，如 : 透過會員APP提供專屬的優惠廣告、推薦商品，精準刺激消費者的購買慾望，並透過APP定期發派任務賺取會員點數，或是發佈網紅合作、試用心得，讓品牌與消費者產生情感連結，加深品牌忠誠度。
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ngsL17UBkaY" target="_blank"><img src="http://img.youtube.com/vi/ngsL17UBkaY/0.jpg" 
-alt="智慧農業" width="800" height="400" border="10" /></a>
+alt="智慧零售" width="800" height="400" border="10" /></a>
 <br>影片取自 youtube
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=F7vm70oos4M" target="_blank"><img src="http://img.youtube.com/vi/F7vm70oos4M/0.jpg" 
-alt="智慧農業" width="800" height="400" border="10" /></a>
+alt="智慧零售" width="800" height="400" border="10" /></a>
 <br>影片取自 youtube
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=SjsAhTFuSyE" target="_blank"><img src="http://img.youtube.com/vi/SjsAhTFuSyE/0.jpg" 
-alt="智慧農業" width="800" height="400" border="10" /></a>
+alt="智慧零售" width="800" height="400" border="10" /></a>
 <br>影片取自 youtube
