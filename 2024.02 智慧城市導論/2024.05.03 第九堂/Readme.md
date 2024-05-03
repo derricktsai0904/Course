@@ -75,3 +75,20 @@ alt="智慧零售" width="800" height="400" border="10" /></a>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=SjsAhTFuSyE" target="_blank"><img src="http://img.youtube.com/vi/SjsAhTFuSyE/0.jpg" 
 alt="智慧零售" width="800" height="400" border="10" /></a>
 <br>影片取自 youtube
+
+
+# 超商的虛實整合
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Bb2v_q2kfOs" target="_blank"><img src="http://img.youtube.com/vi/Bb2v_q2kfOs/0.jpg" 
+alt="智慧零售" width="800" height="400" border="10" /></a>
+<br>影片取自 youtube
+https://www.youtube.com/watch?v=Bb2v_q2kfOs
+
+# 智慧倉儲
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=FxlKKed-hHs" target="_blank"><img src="http://img.youtube.com/vi/FxlKKed-hHs/0.jpg" 
+alt="智慧倉儲" width="800" height="400" border="10" /></a>
+<br>影片取自 youtube
+
+# 智慧港口
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=TB2slSH69qY" target="_blank"><img src="http://img.youtube.com/vi/TB2slSH69qY/0.jpg" 
+alt="智慧港口" width="800" height="400" border="10" /></a>
+<br>影片取自 youtube
