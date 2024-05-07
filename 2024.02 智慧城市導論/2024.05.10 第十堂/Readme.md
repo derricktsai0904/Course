@@ -63,6 +63,51 @@ alt="智慧醫療" width="400" height="250" border="10" /></a>
 麥肯錫強調，要完成這三階段，歐洲健康照護機構必須有更多的數據整合、更強力的監理並持續改善數據品質，醫療機構、醫護人員對AI解決方案與風險管理，也要有更大的信心。
 <br>
 
+<br>
+<img src="https://github.com/derricktsai0904/Course/blob/main/2024.02%20%E6%99%BA%E6%85%A7%E5%9F%8E%E5%B8%82%E5%B0%8E%E8%AB%96/2024.05.10%20%E7%AC%AC%E5%8D%81%E5%A0%82/005.jpg" width=500 height=600 />
+<br>
+# 智慧醫療發展面臨哪些挑戰？
+儘管各界充滿期待，相較於較成熟的智慧製造與自動駕駛，人工智慧在醫療的應用，仍處於起步階段。
+
+麥肯錫發現，仍有44%醫護人員的工作從未涉及人工智慧；L.E.K.顧問則評估，以自動駕駛AI的發展六階段（Level0到Level6）來看，智慧醫療的最高表現則只有Level1（無人車則介於Level2到3），代表醫療AI技術尚未成熟，須在醫護人員完全掌控下，才能協助醫療決策，「大部分是實驗性地、選擇性地使用於協助醫院的臨床與非臨床工作流程。」
+
+而在產業面，人工智慧要落實、進而形成產業生態系，也面臨許多挑戰。以台灣來說，還需克服四個問題：
+## 一、受限法規，醫療數據取得困難
+因醫療數據涉及病人個資，難以取得，使人工智慧在醫療領域的應用，比製造、交通等產業都慢。即便台灣有獨步全球的健保數據，也因《個人資料保護法》限制，無法商用，只能眼看國外競爭對手攻進台灣市場。
+
+## 二、健保補助有限，醫院缺乏推廣誘因
+人工智慧醫療服務必須取得主管機關、衛福部食藥署核准，才能用於醫療診斷。但食藥署過去管理的是醫材（硬體），相關要求並不適用於軟體（演算法）；健保局也尚未同意以健保給付人工智慧醫療服務，使醫院缺乏推廣誘因；而AI演算法的「黑盒子」特性，也使部分醫護人員心存懷疑，不肯埋單。
+
+## 三、台灣缺乏軟體產業
+雖然不少人認為，台灣科技產業與醫療技術都領先全球，加上健保資料，「強強聯手」定能繼半導體業後，創造「第二個護國神山」。事實上，台灣科技業的強項是硬體，但智慧醫療的核心是軟體（演算法），台灣不見得有領先優勢。
+
+## 四，醫界與科技業文化大不同
+此外，智慧醫療服務的使用者是醫師，研發、製造端則在科技業，雙方須緊密合作，才能研發合乎需求的產品。然而，醫界與科技業的組織文化與專業語言大不相同，需要更多同時理解醫學與科技的人才居中協調，才能嫁接兩個產業。
+
+<br>
+<img src="https://github.com/derricktsai0904/Course/blob/main/2024.02%20%E6%99%BA%E6%85%A7%E5%9F%8E%E5%B8%82%E5%B0%8E%E8%AB%96/2024.05.10%20%E7%AC%AC%E5%8D%81%E5%A0%82/006.jpg" width=500 height=600 />
+<br>
+
+
+
+# AI醫療 ( Google 聊天機器人 for 醫療 稱為 Med-PaLM 2 Models 85分以上)
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=gwjNHqEct6I" target="_blank"><img src="http://img.youtube.com/vi/gwjNHqEct6I/0.jpg" 
+alt="智慧醫療" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube
+<br>
+
+
+# AI醫療-機械手臂開刀
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=kQ0jIZ6GqGc" target="_blank"><img src="http://img.youtube.com/vi/kQ0jIZ6GqGc/0.jpg" 
+alt="智慧醫療" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube
+<br>
+
+# AI輔助看診
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=GiFA3G7zYt4" target="_blank"><img src="http://img.youtube.com/vi/GiFA3G7zYt4/0.jpg" 
+alt="智慧醫療" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube
+<br>
 
 
 
