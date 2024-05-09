@@ -111,4 +111,11 @@ alt="智慧醫療" width="400" height="250" border="10" /></a>
 
 
 
+# 高雄的智慧醫療(高醫、長庚、高榮、義大、民生、凱旋)
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=ZifoQ9kDPZk" target="_blank"><img src="http://img.youtube.com/vi/ZifoQ9kDPZk/0.jpg" 
+alt="智慧醫療" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube
+<br>
+
 
