@@ -1,5 +1,6 @@
+# 衛福部統計
 <br>
-<img src="https://github.com/derricktsai0904/Course/blob/main/2024.02%20%E6%99%BA%E6%85%A7%E5%9F%8E%E5%B8%82%E5%B0%8E%E8%AB%96/2024.05.10%20%E7%AC%AC%E5%8D%81%E5%A0%82/chart.jpeg" width=600 height=800 />
+<img src="https://github.com/derricktsai0904/Course/blob/main/2024.02%20%E6%99%BA%E6%85%A7%E5%9F%8E%E5%B8%82%E5%B0%8E%E8%AB%96/2024.05.10%20%E7%AC%AC%E5%8D%81%E5%A0%82/chart1.jpeg" width=800 height=500 />
 <br>
 
 # 智慧醫療
