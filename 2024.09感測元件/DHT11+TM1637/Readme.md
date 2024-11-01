@@ -33,6 +33,11 @@
 TM1637 tm1637(CLK,DIO);    //宣告顯示晶片涵式庫
 DHT dht(DHTPIN, DHTTYPE);
 
+int dig1 = 0;
+int dig2 = 0;
+int dig3 = 0;
+int dig4 = 0;
+
 void setup() {
   Serial.begin(9600);
   dht.begin();
@@ -48,19 +53,18 @@ void loop() {
     Serial.println("Failed to read from DHT");
     }
   else {
-    int dig1 = 0, dig2 = 0, dig3 = 0, dig4 = 0;    
-    dig4 = (t / 10) % 10;
-    dig3 = t % 10;
+    //int dig1 = 0, dig2 = 0, dig3 = 0, dig4 = 0;
+    dig4 = (t / 10);
+    dig3 = t - ( dig4 * 10);
 
-    dig2 = (h / 10)   % 10;
-    dig1 = h % 10;
+    dig2 = (h / 10);
+    dig1 = h - ( dig2 * 10 );
     
     tm1637.display(0,dig4);       //千位數  千位 百位 = 溫度
     tm1637.display(1,dig3);       //百位數
 
     tm1637.display(2,dig2);       //十位數 十位 個位 = 濕度
     tm1637.display(3,dig1);       //個位數
-   }
   }
 }
 
