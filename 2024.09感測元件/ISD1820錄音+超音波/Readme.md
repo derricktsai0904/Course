@@ -1,0 +1,54 @@
+<h1>ISD1820 錄音加超音波電路</h1>
+
+## 準備材料 : 
+>1. Arduino Nano板(CH340驅動程式.USB:MiniUSB) 
+>2. MiniUSB 連接線 X 1 
+>3. DHT11感測器
+>4. 麵包板 X 1 
+===
+
+## 電路圖
+>![](https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/DHT11%E6%BA%AB%E6%BF%95%E5%BA%A6/DHT11.jpg?raw=true)
+
+## 下載函式庫
+>![](https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/DHT11%E6%BA%AB%E6%BF%95%E5%BA%A6/DHT11Lib.jpg?raw=true)
+
+## 程式說明
+
+https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/DHT11%E6%BA%AB%E6%BF%95%E5%BA%A6/DHT11.ino
+
+[以下程式來源 DHT11.ino ]:[https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/DHT11%E6%BA%AB%E6%BF%95%E5%BA%A6/DHT11.ino](https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/DHT11%E6%BA%AB%E6%BF%95%E5%BA%A6/DHT11.ino) "DHT11.ino"
+[以下程式來源 DHT11.ino ]
+``` arduino
+#include "DHT.h"
+#define DHTPIN 8   
+#define DHTTYPE DHT11 
+
+DHT dht(DHTPIN, DHTTYPE);
+
+void setup() {
+  Serial.begin(9600);
+  dht.begin();
+}
+
+void loop() {
+  float h = dht.readHumidity();
+  float t = dht.readTemperature();
+  if (isnan(t) || isnan(h)) {
+    Serial.println("Failed to read from DHT");
+    }
+  else {
+    Serial.print("Temp=");
+    Serial.print(t);
+    Serial.println(" *C");
+    Serial.println("Temp=");
+
+    Serial.print("Humidity=");
+    Serial.print(h);
+    Serial.println("% ");
+    delay(500);
+   }
+  }
+}
+
+```
