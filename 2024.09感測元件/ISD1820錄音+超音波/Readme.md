@@ -8,7 +8,8 @@
 ===
 
 ## 電路圖
->![](https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/DHT11%E6%BA%AB%E6%BF%95%E5%BA%A6/DHT11.jpg?raw=true)
+>![](https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/ISD1820%E9%8C%84%E9%9F%B3%2B%E8%B6%85%E9%9F%B3%E6%B3%A2/ISD%2BHCSR04.jpg?raw=true)
+
 
 ## 下載函式庫
 >![](https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/DHT11%E6%BA%AB%E6%BF%95%E5%BA%A6/DHT11Lib.jpg?raw=true)
