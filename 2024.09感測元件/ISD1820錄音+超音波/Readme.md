@@ -38,9 +38,9 @@ void loop () {
     Serial.println(x);
     if( (x < 15) && (x != -1 )){
        digitalWrite(8, HIGH);
-       delay(10);
+       delay(100);
        digitalWrite(8, LOW);
-       delay(10);
+       delay(100);
        Serial.println("hit....");
     }
     delay(500);
