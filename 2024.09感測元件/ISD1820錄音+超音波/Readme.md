@@ -29,7 +29,7 @@ UltraSonicDistanceSensor distanceSensor(11, 12);  // Initialize sensor that uses
 
 void setup () {
     Serial.begin(9600);  // We initialize serial connection so that we could print values from sensor.
-    pinMode(10, OUTPUT);
+    pinMode(8, OUTPUT);
 }
 
 void loop () {
