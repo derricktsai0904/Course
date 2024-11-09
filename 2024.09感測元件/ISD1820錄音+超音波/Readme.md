@@ -37,9 +37,9 @@ void loop () {
     int x = distanceSensor.measureDistanceCm();
     Serial.println(x);
     if( (x < 15) && (x != -1 )){
-       digitalWrite(10, HIGH);
+       digitalWrite(8, HIGH);
        delay(10);
-       digitalWrite(10, LOW);
+       digitalWrite(8, LOW);
        delay(10);
        Serial.println("hit....");
     }
