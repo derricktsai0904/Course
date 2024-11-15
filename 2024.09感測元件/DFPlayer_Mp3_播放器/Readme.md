@@ -21,6 +21,8 @@
 <br>
 DFPlayer Mini Mp3 By Makuna 
 <br>
+>![](https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/DFPlayer_Mp3_%E6%92%AD%E6%94%BE%E5%99%A8/DFPlayer.jpg?raw=true)
+<br>
 
 ## 程式說明
 [以下程式來源 DFPlayerMp3.ino ]:[[https://github.com/derricktsai0904/Arduino/blob/master/06.ESP32%E6%8E%A7%E5%88%B6/04.ESP32-CAM%2BUltrasonic/ESP32-CAM-Ultrasonic-Line_LED.ino](https://github.com/derricktsai0904/Arduino/blob/master/07.DFPlayer%20Mini%20Mp3/DFPlayerMP3.ino) "DFPlayerMp3.ino"
