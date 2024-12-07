@@ -133,8 +133,8 @@ void loop()
 {
   int bt1 = digitalRead(6);
   int bt2 = digitalRead(7);
-  int bt3 = digitalRead(7);
-  int bt4 = digitalRead(7);
+  int bt3 = digitalRead(8);
+  int bt4 = digitalRead(9);
 
   Serial.print("bt1 = ");
   Serial.print(bt1);
