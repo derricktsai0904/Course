@@ -2,7 +2,7 @@
 >![](https://github.com/derricktsai0904/Arduino/blob/master/07.DFPlayer%20Mini%20Mp3/DFPlayerMiniMp3.jpg?raw=true)
 
 ## Arduino 電路圖
->![](https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/DFPlayer_Mp3_%E6%92%AD%E6%94%BE%E5%99%A8/DFPlayerMp3.jpg?raw=true)
+>![](https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/DFPlayer_Mp3_%E6%92%AD%E6%94%BE%E5%99%A8%2B%E6%8C%89%E9%88%95%E6%8E%A7%E5%88%B6/DFPlayerMp3Button.jpg?raw=true)
 
 
 ## 接線方式
