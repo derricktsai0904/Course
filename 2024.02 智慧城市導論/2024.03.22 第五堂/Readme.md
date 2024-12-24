@@ -101,7 +101,7 @@ alt="公有雲、私有雲、混合雲以及Iaas、Paas、Saas介紹" width="400
 # 智慧共杆可以促進5G網路的發展
 
 ## 基地台的偽裝
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=_YjniHlGhSc" target="_blank"><img src="http://img.youtube.com/vi/_YjniHlGhSc/0.jpg" 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=TclvuuvRyiQ" target="_blank"><img src="http://img.youtube.com/vi/TclvuuvRyiQ/0.jpg" 
 alt="基地台的偽裝" width="400" height="250" border="10" /></a>
 <br>影片取自 youtube
 
