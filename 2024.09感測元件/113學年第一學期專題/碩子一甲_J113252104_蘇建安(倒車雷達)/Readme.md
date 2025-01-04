@@ -1,3 +1,15 @@
+Markdown:
+[JP Markdown](https://wordpress.org/plugins/jetpack-markdown){.target-blank .rel-nofollow}
+
+JavaScript (just before the closing </body> tag):
+<script>
+jQuery('.target-blank').attr('target', '_blank').removeClass('target-blank').filter('[title=""]').removeAttr('title').filter('[class=""]').removeAttr('class');
+jQuery('.rel-nofollow').attr('rel', 'nofollow').removeClass('rel-nofollow').filter('[title=""]').removeAttr('title').filter('[class=""]').removeAttr('class');
+</script>
+
+Post-jQuery HTML:
+<a href="https://wordpress.org/plugins/jetpack-markdown" target="_blank" rel="nofollow">JP Markdown</a>
+
 <h1>HC-SR04超音波感測器與RGB LED燈 + TM1637 4位七段顯示器與MP3模組，使用按鈕控制實現倒車雷達之功能</h1>
 
 
