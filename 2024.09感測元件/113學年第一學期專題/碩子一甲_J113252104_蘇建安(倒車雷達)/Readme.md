@@ -23,7 +23,7 @@
 
 ##實作影片
 
-<a href= "https://youtube.com/shorts/NnKyDppa5NA?feature=share">
+<a href= "https://youtube.com/shorts/NnKyDppa5NA?feature=share" target="_blank">
 <img src= "https://i.ytimg.com/vi/NnKyDppa5NA/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLA1kXOIQcs2IWTwRVDh0-mNiFULkA/0.jpg" width=300 height=300></a>
 
 ## 程式碼
