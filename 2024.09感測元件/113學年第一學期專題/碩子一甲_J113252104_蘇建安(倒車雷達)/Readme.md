@@ -23,8 +23,8 @@
 
 ##實作影片
 
-<a href= "https://youtube.com/shorts/ZH6xR6i-68Y?feature=share">
-<img src= "https://i.ytimg.com/vi/ZH6xR6i-68Y/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLA1kXOIQcs2IWTwRVDh0-mNiFULkA/0.jpg"></a>
+<a href= "https://youtube.com/shorts/NnKyDppa5NA?feature=share">
+<img src= "https://i.ytimg.com/vi/NnKyDppa5NA/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLA1kXOIQcs2IWTwRVDh0-mNiFULkA/0.jpg"></a>
 
 ## 程式碼
 
