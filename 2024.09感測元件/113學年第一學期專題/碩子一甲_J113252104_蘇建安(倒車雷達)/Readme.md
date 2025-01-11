@@ -12,14 +12,14 @@
 >8. 麵包板 X 1===
 
 ## 電路圖
->![](https://github.com/sujamie/Arduino/blob/main/%E6%9C%9F%E6%9C%AB%E5%AF%A6%E4%BD%9C/%E9%9B%BB%E8%B7%AF%E5%9C%96.jpg?raw=true)
+>![](https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/113%E5%AD%B8%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%B8%E6%9C%9F%E5%B0%88%E9%A1%8C/%E7%A2%A9%E5%AD%90%E4%B8%80%E7%94%B2_J113252104_%E8%98%87%E5%BB%BA%E5%AE%89(%E5%80%92%E8%BB%8A%E9%9B%B7%E9%81%94)/%E9%9B%BB%E8%B7%AF%E5%9C%96.jpg?raw=true)
 
 ## 引入函式庫
->![](https://github.com/sujamie/Arduino/blob/main/%E6%9C%9F%E6%9C%AB%E5%AF%A6%E4%BD%9C/TM1367.png?raw=true)
->![](https://github.com/sujamie/Arduino/blob/main/%E6%9C%9F%E6%9C%AB%E5%AF%A6%E4%BD%9C/DFMP3.png?raw=true)
+>![](https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/113%E5%AD%B8%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%B8%E6%9C%9F%E5%B0%88%E9%A1%8C/%E7%A2%A9%E5%AD%90%E4%B8%80%E7%94%B2_J113252104_%E8%98%87%E5%BB%BA%E5%AE%89(%E5%80%92%E8%BB%8A%E9%9B%B7%E9%81%94)/TM1367.png?raw=true)
+>![](https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/113%E5%AD%B8%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%B8%E6%9C%9F%E5%B0%88%E9%A1%8C/%E7%A2%A9%E5%AD%90%E4%B8%80%E7%94%B2_J113252104_%E8%98%87%E5%BB%BA%E5%AE%89(%E5%80%92%E8%BB%8A%E9%9B%B7%E9%81%94)/DFMP3.png?raw=true)
 
 ##流程圖
->![](https://github.com/sujamie/Arduino/blob/main/%E6%9C%9F%E6%9C%AB%E5%AF%A6%E4%BD%9C/%E6%B5%81%E7%A8%8B%E5%9C%96.png?raw=true)
+>![](https://github.com/derricktsai0904/Course/blob/main/2024.09%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6/113%E5%AD%B8%E5%B9%B4%E7%AC%AC%E4%B8%80%E5%AD%B8%E6%9C%9F%E5%B0%88%E9%A1%8C/%E7%A2%A9%E5%AD%90%E4%B8%80%E7%94%B2_J113252104_%E8%98%87%E5%BB%BA%E5%AE%89(%E5%80%92%E8%BB%8A%E9%9B%B7%E9%81%94)/%E6%B5%81%E7%A8%8B%E5%9C%96.png?raw=true)
 
 ##實作影片
 
