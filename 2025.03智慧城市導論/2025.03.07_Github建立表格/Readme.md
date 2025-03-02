@@ -26,7 +26,26 @@ Step2.下載QRCode軟體 <br>
 <img src="GithubPic2.jpg" width="600" Height="300" />
 <br>
 
+## 建立表格
+如下圖說明
+### 範例語法說明
+<img src="table.jpg" />
 
+### 範例內容
+| 項次 | 項目 | 內容 |
+|----:|------|------|
+|1 | 圖片 | <img src="people.jpg" width="100" Height="100" />|
+|2 | 姓名 | 蔡正雄 |
+|3 | 職稱 | 資訊室經理 |
+|3 | 任職公司 | 中鋼保全 |
+
+
+## 製作 Github 網頁連結的QRCode
+### 執行 QR Code Generator 軟體
+<img src="GithubQR3.jpg" width="400" Height="400" /><br>
+
+### 輸入網址，產生QRCode圖片
+<img src="GithubQR4.jpg" width="400" Height="400" /><br>
 
 
 
