@@ -43,13 +43,13 @@ Github 可以說是程式的雲端硬碟或 IG。註冊帳號就可以上傳檔�
 </summary>
 
 -----
-Step1.Create repository(建立儲存庫) <br>
+- Step1.Create repository(建立儲存庫) <br>
 從使用者登入介面按下 Create repository。 <br>
 <img src="Github_signup3.jpg" width="600" height="300" />
 <br>
 
 -----
-Step2.填寫 repository 相關資訊 <br>
+- Step2.填寫 repository 相關資訊 <br>
 填寫資料夾名稱、選取Public屬性、勾選 "Add a Readme File"，最後再點選 "Create repository"。 <br>
 <img src="GithubNew.jpg" width="600" height="300" />
 <br>
@@ -57,7 +57,7 @@ Step2.填寫 repository 相關資訊 <br>
 <br>
 
 -----
-Step3.顯示 Readme.md，預設說明頁面。 <br>
+- Step3.顯示 Readme.md，預設說明頁面。 <br>
 <img src="GithubNew3.jpg" width="600" height="300" />
 <br>
 
@@ -71,22 +71,22 @@ Step3.顯示 Readme.md，預設說明頁面。 <br>
 </summary>
 
 -----
-Step1.進入編輯頁面 <br>
+- Step1.進入編輯頁面 <br>
 請點選右上角的"筆"圖形，就可以進入編輯模式。<br>
 <img src="GithubEdit.jpg" width="600" height="300" />
 
 -----
-Step2.編輯字型大小 <br>
+- Step2.編輯字型大小 <br>
 h1 的字型最大，h2 次之，以此類推。 <br>
 <img src="GithubEdit1.jpg" width="600" height="300" />
 
 -----
-Step2.編輯分項類型 <br>
+- Step3.編輯分項類型 <br>
 有以下三種分項方式 <br>
 <img src="GithubEdit2.jpg" width="600" height="300" />
 
 -----
-Step3.建立網址連結 <br>
+- Step4.建立網址連結 <br>
 可以參考以下兩種方式 <br>
 <img src="GithubEdit3.jpg" width="600" height="300" />
 
