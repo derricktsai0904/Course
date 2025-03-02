@@ -1,5 +1,5 @@
-# 連結QRCODE
-<img src="githubhelp.png" width="300" Height="300" />
+# 連結頁面 QRCODE
+<img src="githubhelp.png" width="150" Height="150" />
 <br>
 
 # Github 說明
