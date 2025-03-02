@@ -1,3 +1,7 @@
+# 連結QRCODE
+<img src="githubhelp.png" width="300" Height="300" />
+<br>
+
 # Github 說明
 Github 可以說是程式的雲端硬碟或 IG。註冊帳號就可以上傳檔案，
 可以自己決定要不要讓別人看到。當然也可以留言、按讚（星星）、或轉發改編。 
