@@ -1,3 +1,6 @@
+# 連結頁面 QRCode
+<img src="class_desc.png" width="150" Height="150" />
+<br>
 
 # 課程名稱 : 智慧城市導論
 # 任教老師 : 蔡正雄
