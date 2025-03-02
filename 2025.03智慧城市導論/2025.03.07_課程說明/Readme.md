@@ -28,6 +28,9 @@
 |2 | 期中考 | 30% | 繳交線上報告 |
 |3 | 期末考 | 50% | 分組報告 |
 
+
+
+-----
 ## 任職公司介紹 : 中鋼保全 資訊室 經理
 [![中鋼保全](https://img.youtube.com/vi/Wb9UKC7_360/0.jpg)](https://www.youtube.com/watch?v=Wb9UKC7_360)
 
