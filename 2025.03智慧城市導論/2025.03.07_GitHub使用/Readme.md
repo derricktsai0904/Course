@@ -15,20 +15,20 @@ Github 可以說是程式的雲端硬碟或 IG。註冊帳號就可以上傳檔�
 
 </summary>
 
-Step1.註冊帳號
+- Step1.註冊帳號
 請先登入 https://www.github.com 如下圖，然後點擊右上角的 Sign up。
 
 <img src="https://github.com/derricktsai0904/Course/blob/main/2025.03%E6%99%BA%E6%85%A7%E5%9F%8E%E5%B8%82%E5%B0%8E%E8%AB%96/2025.03.07_GitHub%E4%BD%BF%E7%94%A8/Github_signup1.jpg" width="600" height="300" />
 <br>
 
 -----
-Step2.填寫註冊資訊
+- Step2.填寫註冊資訊
 請填寫註冊用的Email帳號、登入密碼以及使用的名稱，最後請點選最下面的 Continue。
 ![alt 填寫註冊資訊](Github_signup2.jpg "填寫Github註冊資訊")
 <br>
 
 -----
-Step3.進入GitHub使用者介面
+- Step3.進入GitHub使用者介面
 如下圖<br>
 <img src="Github_signup3.jpg" width="600" height="300" />
 
