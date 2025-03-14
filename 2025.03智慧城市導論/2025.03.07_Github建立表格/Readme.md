@@ -1,3 +1,5 @@
+<img src="qrcode_table.png" width="200" height="200">
+
 # 本文介紹如何使用 QRCode 連結至 Github 的表格網頁。
 
 
