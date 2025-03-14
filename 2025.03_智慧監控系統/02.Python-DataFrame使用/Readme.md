@@ -90,11 +90,17 @@ print(df)
 
 ---
 
-安裝股票相關套件
+安裝股票相關套件 <br>
+```
 pip install -U quandl numpy pandas matplotlib pystan pytrends plotly yfinance
+```
 
 其中 yfinance 安裝會失敗，請一下面指令執行一次
+```
 python3 -m pip install yfinance
+```
+
+
 
 
 
