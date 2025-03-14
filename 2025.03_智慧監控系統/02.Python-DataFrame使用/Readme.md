@@ -60,9 +60,33 @@ print(df)
 3    John  86  70
 ```
 
+---
 
+練習 (刪除 df 的某一欄資料)
+```python
+import pandas as pd
+ 
+grades = {
+    "name": ["Mike", "Sherry", "Cindy", "John"],
+    "math": [80, 75, 93, 86],
+    "chinese": [63, 90, 85, 70]
+}
+ 
+df = pd.DataFrame(grades)
+del df['math']
+ 
+print("使用字典來建立df：")
+print(df)
+```
 
-
+執行結果
+---
+     name  chinese
+0    Mike       63
+1  Sherry       90
+2   Cindy       85
+3    John       70
+---
 
 
 
