@@ -163,3 +163,12 @@ display(df)
 ```
 
 
+抓取開講資料
+```
+url = "https://happylottery.tw/threeStar.html"
+
+tables = pd.read_html(url,encoding='utf-8')
+df = tables[0]
+
+display(df)
+```
