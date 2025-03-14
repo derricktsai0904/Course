@@ -80,13 +80,22 @@ print(df)
 ```
 
 執行結果
----
+```
      name  chinese
 0    Mike       63
 1  Sherry       90
 2   Cindy       85
 3    John       70
+```
+
 ---
+
+安裝股票相關套件
+pip install -U quandl numpy pandas matplotlib pystan pytrends plotly yfinance
+
+其中 yfinance 安裝會失敗，請一下面指令執行一次
+python3 -m pip install yfinance
+
 
 
 
