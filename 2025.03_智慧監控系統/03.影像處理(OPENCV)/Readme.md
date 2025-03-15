@@ -24,7 +24,7 @@ OpenCV 常應用於擴增實境、臉部辨識、手勢辨識、動作辨識、�
 # 讀取圖片練習
 請照以下程式碼執行
 
-讀圖方式一
+## 讀圖方式一
 ```
 from IPython.display import Image, display
 
@@ -36,7 +36,7 @@ display(Image(filename="lenna.jpg"))
 <img src="jupyter-lenna.jpg" width="200" height="200" />
 <hr>
 
-讀圖方式二
+## 讀圖方式二
 彈出 Windows 視窗
 ```
 import cv2
@@ -48,9 +48,13 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 顯示結果
+<br>
+<img src="windows-lenna.jpg" width="400" height="200" />
+<br>
+<hr>
 
-
-
+## 讀圖方式三
+使用 matplotlib 顯示圖形
 ```
 import cv2
 from matplotlib import pyplot as plt
@@ -60,6 +64,12 @@ im2 = im[:,:,::-1]              # Convert image as rgb
 plt.imshow(im2)
 plt.show()
 ```
+
+顯示結果
+<br>
+<img src="plt-lenna.jpg" width="400" heigh="400" />
+<br><hr>
+
 
 
 
