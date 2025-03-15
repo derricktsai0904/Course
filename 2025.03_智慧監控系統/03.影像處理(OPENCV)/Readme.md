@@ -31,7 +31,7 @@ from IPython.display import Image, display
 display(Image(filename="lenna.jpg"))
 ```
 
-顯示結果
+### 顯示結果
 <hr>
 <img src="jupyter-lenna.jpg" width="200" height="200" />
 <hr>
@@ -47,7 +47,7 @@ cv2.imshow("lenna",image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-顯示結果
+### 顯示結果
 <br>
 <img src="windows-lenna.jpg" width="400" height="200" />
 <br>
@@ -64,16 +64,79 @@ im2 = im[:,:,::-1]              # Convert image as rgb
 plt.imshow(im2)
 plt.show()
 ```
-
-顯示結果
+### 顯示結果
 <br>
 <img src="plt-lenna.jpg" width="400" heigh="400" />
 <br><hr>
 
 
+## 練習 同時顯示多張子圖，以不同RGB色系呈現
+```
+import cv2
+from matplotlib import pyplot as plt
+
+img = cv2.imread("lenna.jpg",1)
+
+plt.figure(num='astronaut',figsize=(8,8))  #創建一個名為astronaut的視窗,並設置大小 
+
+plt.subplot(2,2,1)     #將窗口分為兩行兩列四個子圖，則可顯示四幅圖片
+plt.title('origin image')   #第一幅圖片標題
+plt.imshow(img[:,:,::-1])      #繪製第一幅圖片
+plt.axis('off')     #不顯示座標尺寸
+
+plt.subplot(2,2,2)     #第二個子圖
+plt.title('R channel')   #第二幅圖片標題
+plt.imshow(img[:,:,0],plt.cm.gray)      #繪製第二幅圖片,且為灰度圖
+plt.axis('off')     #不顯示座標尺寸
+
+plt.subplot(2,2,3)     #第三個子圖
+plt.title('G channel')   #第三幅圖片標題
+plt.imshow(img[:,:,1],plt.cm.gray)      #繪製第三幅圖片,且為灰度圖
+plt.axis('off')     #不顯示座標尺寸
+
+plt.subplot(2,2,4)     #第四個子圖
+plt.title('B channel')   #第四幅圖片標題
+plt.imshow(img[:,:,2],plt.cm.gray)      #繪製第四幅圖片,且為灰度圖
+plt.axis('off')     #不顯示座標尺寸
+```
+### 顯示結果
+<br>
+<img src="RGB-lenna.jpg" width="400" height="400" />
+<br><hr>
 
 
+## 練習 同時顯示多張子圖，以不同 "亮度" 呈現
+```
+import matplotlib.pyplot as plt
+import matplotlib.image as img
+from PIL import Image, ImageEnhance
 
+plt.figure(figsize=(8,8))
+
+img = Image.open("lenna.jpg")              # 開啟圖片
+enhancer = ImageEnhance.Brightness(img)   # 建立調整亮度的方法
+
+plt.subplot(221)
+plt.imshow(img)               # 顯示原圖
+
+plt.subplot(222)
+img2 = enhancer.enhance(0.5)  # 顯示亮度 x0.5 的圖片
+plt.imshow(img2)
+
+plt.subplot(223)
+img3 = enhancer.enhance(1.5)  # 顯示亮度 x1.5 的圖片
+plt.imshow(img3)
+
+plt.subplot(224)
+img4 = enhancer.enhance(3)    # 顯示亮度 x3 的圖片
+plt.imshow(img4)
+
+plt.show()
+```
+### 顯示結果
+<br>
+<img src="line-lenna.jpg" width="400" height="400" />
+<br><hr>
 
 
 
