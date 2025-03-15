@@ -139,6 +139,39 @@ plt.show()
 <br><hr>
 
 
+## 練習 同時顯示多張子圖，以水平及垂直翻轉呈現
+```
+import cv2
+import matplotlib.pyplot as plt
+import matplotlib.image as img
 
+from PIL import Image, ImageEnhance
+
+plt.figure(figsize=(8,8))
+
+im = cv2.imread("lenna.jpg")            # 開啟圖片
+img = im[:,:,::-1]
+
+plt.subplot(221)
+plt.imshow(img)               # 顯示原圖
+
+plt.subplot(222)
+img2 = cv2.flip(img,1)
+plt.imshow(img2)
+
+plt.subplot(223)
+img3 = cv2.flip(img,0)
+plt.imshow(img3)
+
+plt.subplot(224)
+img4 = cv2.flip(img2,0)
+plt.imshow(img4)
+
+plt.show()
+```
+### 顯示結果
+<br>
+<img src="flip-lenna.jpg" width="400" height="400" />
+<br><hr>
 
 
