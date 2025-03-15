@@ -36,9 +36,30 @@ display(Image(filename="lenna.jpg"))
 <img src="jupyter-lenna.jpg" width="200" height="200" />
 <hr>
 
+讀圖方式二
+彈出 Windows 視窗
+```
+import cv2
+
+image = cv2.imread("lenna.jpg")
+cv2.imshow("lenna",image)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+顯示結果
 
 
 
+```
+import cv2
+from matplotlib import pyplot as plt
+
+im = cv2.imread("lenna.jpg",1)  # load image as bgr
+im2 = im[:,:,::-1]              # Convert image as rgb
+plt.imshow(im2)
+plt.show()
+```
 
 
 
