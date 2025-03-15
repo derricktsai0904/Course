@@ -90,6 +90,34 @@ print(df)
 
 ---
 
+練習 Plot，請注意 plt.rc
+```
+import matplotlib.pyplot as plt
+import pandas as pd
+
+grades = {
+    "name": ["Mike", "Sherry", "Cindy", "John"],
+    "math": [80, 75, 93, 86],
+    "chinese": [63, 90, 85, 70]
+}
+ 
+df = pd.DataFrame(grades)
+del df['math']
+
+# 顯示中文
+# plt.rc('font', family='Microsoft JhengHei')
+
+plt.title('一年甲班國文成績')
+plt.bar(df['name'],df['chinese'],color='#faebd7',edgecolor='#fa8072',linewidth=2)
+plt.ylabel('國文分數')
+plt.show()
+```
+
+顯示結果
+<img src="chinese.jpg" />
+
+---
+
 安裝股票相關套件 <br>
 ```
 pip install -U quandl numpy pandas matplotlib pystan pytrends plotly yfinance
