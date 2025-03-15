@@ -114,7 +114,47 @@ plt.show()
 ```
 
 顯示結果
+<br><hr>
 <img src="chinese.jpg" />
+
+
+---
+
+
+練習雙資料長餅圖
+```
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+
+grades = {
+    "name": ["Mike", "Sherry", "Cindy", "John"],
+    "math": [80, 75, 93, 86],
+    "chinese": [63, 90, 85, 70]
+}
+ 
+df = pd.DataFrame(grades)
+
+plt.rc('font', family='Microsoft JhengHei')
+
+x_indices = np.arange(len(df['name']))
+plt.title('一年甲班各科成績')
+
+#plt.bar(df['name'],df['math'],color='#faebd7',edgecolor='#fa8072',linewidth=2)
+#plt.bar(df['name'],df['chinese'],color='#faebd7',edgecolor='#fa8072',linewidth=2)
+
+bar_width = 0.2
+plt.bar(x_indices - 0.2,df['math'],color='red',edgecolor='#fa8072',linewidth=0.2,width=bar_width,label='math')
+plt.bar(x_indices + 0.2,df['chinese'],color='blue',edgecolor='#fa8072',linewidth=0.2,width=bar_width,label='chinese')
+
+#width=0.4
+plt.xticks(x_indices, df['name'])
+
+plt.ylabel('分數')
+plt.legend()
+plt.show()
+```
+
 
 ---
 
