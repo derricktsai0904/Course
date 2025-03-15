@@ -4,5 +4,12 @@ OpenCV 全名是 Open Source Computer Vision Library ( 開源計算機視覺函�
 
 OpenCV 常應用於擴增實境、臉部辨識、手勢辨識、動作辨識、運動跟蹤、物體辨識或圖像分割...等領域，能使用各種不同語言 ( Java、Python、C/C++...等 ) 進行開發，由於 OpenCV 的高執行效率，甚至可用來開發 Real-time 的應用程式。
 
+---
 
+首先安裝 oepncv 套件，如下指令
+```
 !pip install opencv-python
+```
+
+
+
