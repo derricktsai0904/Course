@@ -10,6 +10,16 @@ OpenCV 常應用於擴增實境、臉部辨識、手勢辨識、動作辨識、�
 ```
 !pip install opencv-python
 ```
+
+安裝畫面如下<br>
+<img src="install_01.jpg" width="400" height="200" />
+<br>
+
+如果安裝出現 defaulting to user installation because normal site-packages is not writeable
+請到 \anaconda3\Lib\site-packages 將 site-packages 資料夾屬性設為 可允許修改
+然後 再重新安裝一次就可以
+
+
 ---
 # 讀取圖片練習
 請照以下程式碼執行
