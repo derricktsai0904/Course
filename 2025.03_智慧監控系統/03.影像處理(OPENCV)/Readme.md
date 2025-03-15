@@ -10,6 +10,31 @@ OpenCV 常應用於擴增實境、臉部辨識、手勢辨識、動作辨識、�
 ```
 !pip install opencv-python
 ```
+---
+# 讀取圖片練習
+請照以下程式碼執行
+
+讀圖方式一
+```
+from IPython.display import Image, display
+
+display(Image(filename="lenna.jpg"))
+```
+
+顯示結果
+<hr>
+<img src="jupyter-lenna.jpg" width="200" height="200" />
+<hr>
+
+
+
+
+
+
+
+
+
+
 
 
 
