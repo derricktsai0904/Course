@@ -231,7 +231,7 @@ display(df)
 ```
 
 
-抓取開講資料
+抓取開獎資料
 ```
 url = "https://happylottery.tw/threeStar.html"
 
@@ -240,3 +240,31 @@ df = tables[0]
 
 display(df)
 ```
+
+## 讀取本地端 csv 檔案
+```
+import pandas as pd
+df = pd.read_csv('apple.csv')
+df.head()
+```
+### 顯示結果
+<br>
+<img src="apple.jpg" width="200" height="200" />
+<br><hr>
+----
+
+## 讀取本地端 csv 檔案，並畫出圖形
+```
+import pandas as pd
+import plotly.express as px
+
+df = pd.read_csv('apple.csv')
+
+fig = px.line(df, x = 'AAPL_x', y = 'AAPL_y', title='Apple 2014 股價')
+fig.show()
+```
+
+### 顯示結果
+<br>
+<img src="AppleStock.jpg" width="1000" height="400" />
+<br><hr>
