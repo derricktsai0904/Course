@@ -175,3 +175,88 @@ plt.show()
 <br><hr>
 
 
+## 練習圖片的放大縮小 ( Resize )
+```
+import cv2
+import matplotlib.pyplot as plt
+import matplotlib.image as img
+
+from PIL import Image, ImageEnhance
+
+plt.figure(figsize=(8,8))
+
+im = cv2.imread("lenna.jpg")            # 開啟圖片
+img = im[:,:,::-1]
+
+plt.subplot(221)
+plt.imshow(img)               # 顯示原圖
+plt.title(img.shape)
+
+scale_percent = 50       # percent of original size
+width = int(img.shape[1] * scale_percent / 100)
+height = int(img.shape[0] * scale_percent / 100)
+dim = (width, height)
+# resize image
+#img2 = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
+#img2 = cv2.resize(img, dim)
+img2 = cv2.resize(img, (0, 0), fx = 0.2, fy = 0.2)
+
+plt.subplot(222)
+plt.imshow(img2)
+plt.title(img2.shape)
+
+scale_percent = 150       # percent of original size
+width = int(img.shape[1] * scale_percent / 100)
+height = int(img.shape[0] * scale_percent / 100)
+dim = (width, height)
+# resize image
+#img3 = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
+#img3 = cv2.resize(img, dim)
+img3 = cv2.resize(img, (1050, 1610))
+
+plt.subplot(223)
+plt.imshow(img3)
+plt.title(img3.shape)
+
+scale_percent = 200       # percent of original size
+width = int(img.shape[1] * scale_percent / 100)
+height = int(img.shape[0] * scale_percent / 100)
+dim = (width, height)
+# resize image
+#img4 = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
+img4 = cv2.resize(img, (780, 540),interpolation = cv2.INTER_LINEAR)
+
+plt.subplot(224)
+plt.imshow(img4)
+plt.title(img4.shape)
+
+plt.show()
+```
+### 顯示結果
+<br>
+<img src="resize-lenna.jpg" width="400" height="400" />
+<br><hr>
+
+
+## 練習邊緣運算
+```
+import cv2
+from matplotlib import pyplot as plt
+
+img = cv2.imread('mona.jpg')
+im2 = img[:,:,::-1]              # Convert image as rgb
+plt.imshow(im2)
+plt.show()
+
+im3 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)  # 轉成灰階
+im3 = cv2.medianBlur(im3, 7)                 # 模糊化，去除雜訊
+output = cv2.Canny(im3, 36, 36)              # 偵測邊緣
+
+plt.imshow(output)
+plt.show()
+```
+### 顯示結果
+<br>
+<img src="canny-mona.jpg" width="250" height="600" />
+<br><hr>
+
