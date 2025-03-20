@@ -84,6 +84,10 @@ _____________________
 alt="打造智慧城市 從改變交通方式著手" width="400" height="250" border="10" /></a>
 <br>影片取自 youtube
 
+<br><br><br>
+
+_____________________
+
 觀看影片四
 <a href="https://www.youtube.com/watch?v=SN_Z79iPx74" target="_blank">2025高雄智慧城市展(03/20-03/22)</a><br>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=SN_Z79iPx74" target="_blank"><img src="http://img.youtube.com/vi/SN_Z79iPx74/0.jpg" 
