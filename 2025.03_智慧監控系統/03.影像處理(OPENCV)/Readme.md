@@ -8,7 +8,7 @@ OpenCV 常應用於擴增實境、臉部辨識、手勢辨識、動作辨識、�
 
 首先安裝 oepncv 套件，如下指令
 ```
-!pip install opencv-python
+pip install opencv-python
 ```
 
 安裝畫面如下<br>
