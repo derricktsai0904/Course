@@ -218,12 +218,30 @@ mnist = load_digits()
 pd.DataFrame(mnist.data).head()
 ```
 ### 顯示結果
+<img src="08.jpg" width="800" height="300" /><br>
 
-<img src="08.jpg" width="800" height="400" /><br>
+### MNIST 數據集的圖像為 8 x 8 圖形.
+```
+import pylab
+plt.imshow(mnist.images[0])
+pylab.show()
+```
 
+### 顯示結果
+<img src="09.jpg" width="300" height="300" /><br>
 
-
-
+### 列舉20張圖片檢視
+```
+fig, axes = plt.subplots(2, 10, figsize=(16, 6))
+for i in range(20):
+    axes[i//10, i %10].imshow(mnist.images[i], cmap='gray');
+    axes[i//10, i %10].axis('off')
+    axes[i//10, i %10].set_title(f"target: {mnist.target[i]}")
+    
+plt.tight_layout()
+```
+### 顯示結果
+<img src="10.jpg" width="800" height="300" /><br>
 
 
 
