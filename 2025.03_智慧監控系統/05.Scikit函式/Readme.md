@@ -203,3 +203,27 @@ kmeans(x, y, kx, ky, fig=0)
 <img src="05.jpg" width="400" height="400" /><br>
 <img src="06.jpg" width="400" height="400" /><br>
 <img src="07.jpg" width="400" height="400" /><br>
+
+### MNIST 手寫辨識
+MNIST數據庫是一組由美國高中生和人口調查員手寫的70000個數字的圖片。每張圖片都用其代表的數字標記。這個數據集被廣為使用，因此也被稱為機器學習領域的"Hello World"，但凡有人想到一個新的分類算法，都會想看看在MNIST上的執行結果。
+因此只要學習機器學習的人都會面對MNIST數據集。
+
+```
+from sklearn.datasets import load_digits
+import pandas as pd
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+mnist = load_digits()
+pd.DataFrame(mnist.data).head()
+```
+### 顯示結果
+
+<img src="08.jpg" width="800" height="400" /><br>
+
+
+
+
+
+
+
