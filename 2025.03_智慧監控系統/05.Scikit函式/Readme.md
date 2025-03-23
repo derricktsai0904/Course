@@ -19,7 +19,7 @@ iris = sns.load_dataset('iris')
 iris.head()
 ```
 ### 顯示結果
-<img src="01.jpg" width="400" height="200" />
+<img src="01.jpg" width="400" height="200" /><br>
 
 ### 由上方output資料表來看，可以知道iris這個資料集合主要是紀錄花的種類、花萼及花瓣的長寬。
 ```
@@ -27,11 +27,12 @@ import sklearn
 import seaborn as sns
 iris = sns.load_dataset('iris')
 sns.set()
-sns.pairplot(iris, hue='species', size=3)
-
+sns.pairplot(iris, hue='species', height=3)
 ```
 ### 顯示結果
-<img src="01.jpg" width="400" height="200" />
+<img src="02.jpg" width="800" height="800" /><br>
+
+
 
 
 
