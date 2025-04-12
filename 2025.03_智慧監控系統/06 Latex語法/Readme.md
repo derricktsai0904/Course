@@ -2,7 +2,12 @@
 Latex 是一種論文的撰寫格式，有自己的一套語法，本課程使用 Overleaf 作為 Latex 語法撰寫的工具。
 
 
-以下本文說明
+
+<details>
+<Summary>
+  版面排版
+</Summary>
+
 ```
 \documentclass[a4paper,12pt,twoside]{book}
 \usepackage{xeCJK}
@@ -27,6 +32,18 @@ Date
 \end{document}
 ```
 
+## 顯示結果
+<img src="01.jpg" width=400 height=400 />
+
+</details>
+
+<details>
+<Summary>
+表格說明  
+</Summary>
+
+
+</details>
 
 
 
