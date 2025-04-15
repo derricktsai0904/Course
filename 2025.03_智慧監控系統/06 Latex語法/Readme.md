@@ -71,7 +71,7 @@ column1 & column2 & column3 \\
 \end{tabular} 
 ```
 ## 顯示結果
-<img src="02.jpg" width=400 height=200 />
+<img src="03.jpg" width=400 height=200 />
 
 ## 程式說明
 \begin{tabular}[t]{|l|l|l|} ：首先 [t] 代表top，也可以是 [b]，button [c]，center。
