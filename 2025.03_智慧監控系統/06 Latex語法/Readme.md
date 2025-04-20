@@ -117,6 +117,8 @@ Compiler 設定為 XeLaTex 模式 <br><br>
 
 </details>
 
+<!--    #######################    以下為說明表格換行問題          #######################         -->
+
 <details>
 <Summary>
 表格換行問題
@@ -165,8 +167,66 @@ Start & End & Character Block Name \\
 
 </details>
 
+<!--          #######################         以下為說明表格合併     #######################     -->
 
+<details>
+<Summary>
+表格合併儲存格
+</Summary>
 
+## 程式碼
+以下表格合併
+
+```
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multirow{2}*{兩行合一列} & 二 & 三 & 四 \\
+~ & 2 & 3 & 4 \\
+\hline
+\end{tabular}
+```
+
+## 顯示結果
+<img src="07.jpg" width=400 height=150 />
+
+<hr>
+
+## 程式碼
+以下表格合併
+
+```
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multirow{2}*{兩行合一列} & 二 & 三 & 四 \\
+\hline
+~ & 2 & 3 & 4 \\
+\hline
+\end{tabular}
+```
+
+## 顯示結果
+<img src="08.jpg" width=400 height=150 />
+
+<hr>
+
+## 程式碼
+以下表格合併
+
+```
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multirow{2}*{兩行合一列} & 二 & 三 & 四 \\
+\hline
+~ & 2 & 3 & 4 \\
+\hline
+\end{tabular}
+```
+
+## 顯示結果
+<img src="09.jpg" width=400 height=150 />
+
+</details>
 
 
 
