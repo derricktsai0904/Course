@@ -115,6 +115,56 @@ column1 & column2 & column3 \\
 Compiler 設定為 XeLaTex 模式 <br><br>
 就可以解決中文顯示的問題 <br>
 
+</details>
+
+<details>
+<Summary>
+表格換行問題
+</Summary>
+  
+## 程式碼
+以下表格內容過長不換行
+
+```
+\centering
+\section*{\texttt{tabular*} environment}
+\begin{tabular*}{8cm}{lll}
+\hline
+Start & End & Character Block Name \\
+\hline
+3400 & 4DB5 & CJK Unified Ideographs Extension A \\
+4E00 & 9FFF & CJK Unified Ideographs \\
+\hline
+\end{tabular*}
+```
+
+## 顯示結果
+<img src="05.jpg" width=400 height=200 />
+
+## 程式碼
+以下表格內容過長自動換行
+
+```
+\centering
+\section*{\textsf{tabularx} package}
+\begin{tabularx}{8cm}{llX} % 8cm 減去前兩個欄位寬度後，剩下的通通給
+\hline % 第三欄位使用，文字超出的部份會自動折行
+Start & End & Character Block Name \\
+\hline
+3400 & 4DB5 & CJK Unified Ideographs Extension A \\
+4E00 & 9FFF & CJK Unified Ideographs \\
+\hline
+\end{tabularx}
+```
+## 顯示結果
+<img src="06.jpg" width=400 height=200 />
+
+## 使用說明
+編輯以上程式碼會出現錯誤，請加上以下指令 <br><br>
+\usepackage{tabularx}
+
+</details>
+
 
 
 
