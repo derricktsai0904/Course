@@ -8,6 +8,8 @@ Latex 是一種論文的撰寫格式，有自己的一套語法，本課程使�
   版面排版
 </Summary>
 
+## 程式碼
+
 ```
 \documentclass[a4paper,12pt,twoside]{book}
 \usepackage{xeCJK}
@@ -42,6 +44,8 @@ Date
 表格說明  
 </Summary>
 
+## 程式碼
+
 ```
 \begin{tabular}[t]{|l|l|l|}
 \hline
@@ -56,17 +60,21 @@ column1 & column2 & column3 \\
 <img src="02.jpg" width=400 height=200 />
 
 ## 程式說明
-\begin{tabular}[t]{|l|l|l|} ：首先 [t] 代表top，也可以是 [b]，button [c]，center。
+\begin{tabular}[t]{|l|l|l|} ：首先 [t] 代表top，|l|:靠左，|c|:置中，|r|:靠右。
 
 <hr>
+<hr>
+
+## 程式碼
 
 ```
-\begin{tabular}[t]{|l|l|l|}
+\begin{tabular}{|l|c|c|}
 \hline
-column1 & column2 & column3 \\
+\diagbox{Subject}{Score}{Name} & AAA & BBB \\
 \hline
-   item1 & item2 & item3 \\
-   itemA & itemB & itemC \\
+   Math & 80 & 90 \\
+\hline
+   Chinese & \diagbox[dir=SW]{85}{82} & 88 \\
 \hline
 \end{tabular} 
 ```
@@ -74,10 +82,38 @@ column1 & column2 & column3 \\
 <img src="03.jpg" width=400 height=200 />
 
 ## 程式說明
-\begin{tabular}[t]{|l|l|l|} ：首先 [t] 代表top，也可以是 [b]，button [c]，center。
+<img src="04.jpg" width=500 height=300 />
 
 </details>
 
+
+<details>
+<Summary>
+中文表格問題
+</Summary>
+
+## 程式碼
+
+```
+\begin{tabular}{|l|c|c|}
+\hline
+\diagbox{學科}{成績}{姓名} & 張小名 & 王大華 \\
+\hline
+   數學 & 80 & 90 \\
+\hline
+   國文 & \diagbox[dir=SW]{期中:85}{期末:82} & 88 \\
+\hline
+\end{tabular}
+```
+
+## 顯示結果
+應該會出現亂碼，或是空白內容
+
+## 解決方式
+增加以下指令 <br><br>
+\usepackage{ctex} <br><br>
+Compiler 設定為 XeLaTex 模式 <br><br>
+就可以解決中文顯示的問題 <br>
 
 
 
