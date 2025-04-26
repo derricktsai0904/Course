@@ -217,7 +217,7 @@ Start & End & Character Block Name \\
 \begin{tabular}{|c|c|c|c|}
 \hline
 \multirow{2}*{兩行合一列} & 二 & 三 & 四 \\
-\hline
+\cline{2-4}
 ~ & 2 & 3 & 4 \\
 \hline
 \end{tabular}
