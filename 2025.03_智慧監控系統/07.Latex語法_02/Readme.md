@@ -19,6 +19,7 @@
 
 
 ## 2、上標與下標<br>
+Latex 語法 <br>
 x^2    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; % 上標：x 的平方  <br>
 x_1    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; % 下標：x 下標 1  <br>
 x_1^2  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; % 同時使用下標與上標  <br>
@@ -30,5 +31,17 @@ x_1^2  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; % 同時使用下標與�
 </Summary>
 <img src="002.jpg" />
 </details>
+
+<hr>
+顯示的公式範例
+<img src="003.jpg" />
+<details>
+<Summary>
+對應的 Latex 語法
+</Summary>
+$ y = x_1^2 + x_2^2 $
+</details>
+
+
 
 
