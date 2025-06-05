@@ -8,5 +8,12 @@
 
 這是一個行內公式：\( a^2 + b^2 = c^2 \)
 
+<details>
+<Summary>
+顯示結果
+</Summary>
+<img src="001.jpg" />
+</details>
+
 
 
