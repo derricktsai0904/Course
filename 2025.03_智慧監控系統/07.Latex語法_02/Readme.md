@@ -9,6 +9,7 @@
 
 這是一個行內公式：\( a^2 + b^2 = c^2 \)<br>
 
+<hr>
 <details>
 <Summary>
 顯示結果
@@ -22,6 +23,7 @@ x^2    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; % 上標：x 的平方  
 x_1    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; % 下標：x 下標 1  <br>
 x_1^2  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; % 同時使用下標與上標  <br>
 
+<hr>
 <details>
 <Summary>
 顯示結果
