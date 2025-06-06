@@ -42,6 +42,41 @@ x_1^2  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; % 同時使用下標與�
 $ y = x_1^2 + x_2^2 $
 </details>
 
+## 3、數學符號	LaTeX 語法<br>
+
+| 數學符號 | LaTeX 語法 |
+| -------  | ---------|
+| 加法	   | +        |
+| 減法	   | -        |
+| 乘法	   | \times 或 \cdot |
+| 除法	   | \div 或 \frac{a}{b} |
+| 根號	   | \sqrt{x} 或 \sqrt[n]{x} |
+| 等號	   | =                       |
+不等號	\neq, \leq, \geq 等
+
+## 4、線上 Latex 語法參考 <br>
+
+https://www.latexlive.com/
+
+## 5、範例練習 <br>
+
+範例一<br>
+<img src="004.jpg" /><br><br>
+
+範例二<br>
+<img src="005.jpg" /><br><br>
+
+範例三<br>
+<img src="006.jpg" /><br><br>
+
+範例四<br>
+<img src="007.jpg" /><br><br>
+
+範例五<br>
+<img src="008.jpg" /><br><br>
+
+
+
 
 
 
