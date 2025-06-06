@@ -60,20 +60,20 @@ https://www.latexlive.com/
 
 ## 5、範例練習 <br>
 
-範例一<br>
-<img src="004.jpg" /><br><br>
+### 範例一<br>
+<img src="004.jpg" width=150 height=100 /><br><br>
 
 範例二<br>
-<img src="005.jpg" /><br><br>
+<img src="005.jpg" width=150 height=100  /><br><br>
 
 範例三<br>
-<img src="006.jpg" /><br><br>
+<img src="006.jpg" width=150 height=100  /><br><br>
 
 範例四<br>
-<img src="007.jpg" /><br><br>
+<img src="007.jpg" width=150 height=100 /><br><br>
 
 範例五<br>
-<img src="008.jpg" /><br><br>
+<img src="008.jpg" width=150 height=100 /><br><br>
 
 
 
