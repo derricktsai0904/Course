@@ -3,3 +3,6 @@
 <br>
 組員 : <br>
 薛宇翔 
+
+報告連結: <br>
+https://github.com/C109252110/11302/blob/main/README.md
