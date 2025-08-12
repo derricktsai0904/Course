@@ -10,9 +10,18 @@
    請注意要挑選使用的作業系統。(大多數為 Windows 系統)
    <img src="install02.jpg" />
 
+   完成之後，請以讀卡機(SD卡)插入電腦，然後執行下載程式，
+   如下圖所示，
+   A: 選取要安裝的設備 (例: Raspberry Pi3)
+   B: 選取要安裝的OS版本 (例: Raspberry OS 32-bit Desktop)
+   C: 選取要安裝的SD卡槽
+   然後按下確定。
+   <img src="install03.jpg" />
 <hr>
 
-4) 
+4) 以上步驟完成之後，請將 SD卡放置在樹梅派內，然後開機一步一步完成。
+
+ <img src="install"
 
 
 
