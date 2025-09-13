@@ -4,7 +4,7 @@
 
 ## 課程群組 
 <hr>
-<img src="LineGroup.jpg" />
+<img src="LineGroup.jpg" width=200 height=200 />
 
 
 
