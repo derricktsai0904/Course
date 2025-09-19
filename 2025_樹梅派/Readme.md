@@ -1,5 +1,5 @@
 說明網頁位置，請掃描以下 QRCode<br>
-<img src="qrcode.png" width=150 height=150 /><hr>
+<img src="qrcode.png" width=150 height=150 />
 
 <hr>
 
