@@ -14,7 +14,7 @@ sudi apt-get install python3-pip
 pip3 --version
 
 ### 更新系統已安裝軟體
-sudo apt-get update
+sudo apt-get update <br>
 sudo apt-get upgrade
 
 ### 更新升級 pip
