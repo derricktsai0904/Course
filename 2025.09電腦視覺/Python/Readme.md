@@ -2,7 +2,6 @@
 
 請到以下網址下載 Python 檔案 
 <br>
-https://www.python.org/
 
 ## 開啟終端機畫面
 
