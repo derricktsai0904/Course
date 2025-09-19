@@ -1,7 +1,11 @@
 說明網頁位置，請掃描以下 QRCode<br>
 <img src="qrcode.png" width=150 height=150 /><hr>
 
+<hr>
 
+<img src="pi5_dev.jpg" />
+
+<hr>
 
 Raspberry Pi 3 vs 4 vs 5 規格比較表
 
