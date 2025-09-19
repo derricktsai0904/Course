@@ -1,3 +1,6 @@
+說明網頁位置，請掃描以下 QRCode<br>
+<img src="qrcode.png" width=150 height=150 /><hr>
+
 <h1>樹梅派基本安裝</h1>
 
 1) 使用檔案總管格式化功能格式化SD卡，請注意要挑選格視為 FAT32。
