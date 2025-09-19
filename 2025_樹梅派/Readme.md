@@ -19,10 +19,16 @@ Raspberry Pi 3 vs 4 vs 5 規格比較表
 |電源	| 5V/2.5A micro-USB	| 5V/3A USB-C	| 5V/5A USB-C (支援 PD) |
 |其他特色	| GPIO 40-pin、CSI、DSI	| USB 3.0、高效能多螢幕	| PCIe 2.0 x1 (外接擴充)、更快 I/O、RTC 支援 |
 
+<hr>
 
+# 重點比較
+#### 效能：Pi 5 的 Cortex-A76 CPU 比 Pi 4 快約 2~3 倍，相對 Pi 3 更是大幅提升。
+#### 記憶體：Pi 3 僅 1GB，Pi 4/5 提供更高容量，適合桌機或 AI 應用。
+#### 顯示能力：Pi 5 與 Pi 4 一樣支援雙 4K 輸出，而 Pi 3 僅 1080p。
+#### 連線能力：Pi 5 支援 Wi-Fi 6 與真實千兆網路，最適合高頻寬應用。
+#### 擴充性：Pi 5 新增 PCIe，可外接 SSD、網卡等，大幅提升靈活性。
 
-
-
+<hr>
 
 <h1>樹梅派基本安裝</h1>
 
