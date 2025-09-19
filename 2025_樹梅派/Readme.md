@@ -24,15 +24,15 @@
  
  <img src="install04.jpg" />
 
-<img src="Pi1.jpg" width=300 height=300 />
-<img src="Pi2.jpg" width=300 height=300 />
-<img src="Pi3.jpg" width=300 height=300 /> 
-<img src="Pi4.jpg" width=300 height=300 />
-<img src="Pi5.jpg" width=300 height=300 />
-<img src="Pi6.jpg" width=300 height=300 /> 
-<img src="Pi7.jpg" width=300 height=300 />
-<img src="Pi8.jpg" width=300 height=300 />
-<img src="Pi9.jpg" width=300 height=300 /> 
+<img src="Pi1.jpg" width=500 height=500 />
+<img src="Pi2.jpg" width=500 height=500 />
+<img src="Pi3.jpg" width=500 height=500 /> 
+<img src="Pi4.jpg" width=500 height=500 />
+<img src="Pi5.jpg" width=500 height=500 />
+<img src="Pi6.jpg" width=500 height=500 /> 
+<img src="Pi7.jpg" width=500 height=500 />
+<img src="Pi8.jpg" width=500 height=500 />
+<img src="Pi9.jpg" width=500 height=500 /> 
  
 
 
