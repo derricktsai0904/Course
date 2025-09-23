@@ -7,6 +7,9 @@
 
 ## 授課老師 : 蔡正雄
 
-課程 Line 群組 :<br>
+## 課程 Line 群組 :<br>
 <img src="0923.jpg" />
+
+## 課程教材網址 QRCode
+<img src="QRCode.png" />
 
