@@ -12,8 +12,7 @@
 ## 樹梅派 GPIO 電路圖 <br>
 <img src="GPIO4.jpg" />
 
-
-
+<hr>
 
 ## 開啟 Geany 程式編輯軟體 (類似記事本的使用方式) <br>
 <img src="geany.jpg" />
@@ -27,9 +26,11 @@
 ### 測試 Python 版本
 > python --version
 
+<hr>
+
 ## 安裝 RPi.GPIO 函式庫
-#### sudo apt-get update
-#### sudo apt-get install python3-rpi.gpio
+sudo apt-get update
+sudo apt-get install python3-rpi.gpio
 
 <hr>
 
@@ -37,7 +38,10 @@
 ## 執行方式
 python first.py
 
-## GPIO python 控制 LED 燈 , 亮一秒後 就滅掉
+<hr>
+
+<br><br><br>
+## 練習一 : GPIO python 控制 LED 燈 , 亮一秒後 就滅掉
 ``` python
 import RPi.GPIO as GPIO 
 import time
@@ -62,7 +66,10 @@ GPIO.output(pin, GPIO.LOW)
 
 ```
 
-## GPIO python 控制 LED 燈 , 亮一秒後 就滅掉
+<hr>
+<br><br><br>
+
+## 練習二 : GPIO python 控制 LED 燈 , 亮一秒後 就滅掉 (無窮迴圈)
 ``` python
 import RPi.GPIO as GPIO 
 import time
@@ -85,7 +92,10 @@ while True:
 
 ```
 
-## 請應用以上的範例，製作跑馬燈
+<hr>
+<br><br><br>
+
+## 練習三 : 請應用以上的範例，製作跑馬燈
 ``` python
 import RPi.GPIO as GPIO
 import time
