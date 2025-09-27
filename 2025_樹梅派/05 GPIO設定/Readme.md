@@ -6,12 +6,36 @@
 ## 樹梅派腳位對照<br>
 <img src="pin2.jpg" width=600 height=800 />
 
-## 先開啟終端機畫面 <br>
+<hr>
+
+# 樹梅派 GPIO 控制 LED 練習
+## 樹梅派 GPIO 電路圖 <br>
+<img src="GPIO4.jpg" />
+
+
+
+
+## 開啟 Geany 程式編輯軟體 (類似記事本的使用方式) <br>
+<img src="geany.jpg" />
+
+<hr>
+
+## 測試 Python 程式
+### 開啟終端機畫面 <br>
 <img src="termin.jpg" />
+
+### 測試 Python 版本
+> python --version
 
 ## 安裝 RPi.GPIO 函式庫
 #### sudo apt-get update
 #### sudo apt-get install python3-rpi.gpio
+
+<hr>
+
+# 將以下範例開啟 Geany ，存成 .py 的檔案，
+## 執行方式
+python first.py
 
 ## GPIO python 控制 LED 燈 , 亮一秒後 就滅掉
 ``` python
