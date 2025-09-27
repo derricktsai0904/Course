@@ -167,7 +167,12 @@ plt.axis("off")
 plt.show()
 ```
 
-<br><br><br><br>
+
+### 輸出結果 <br>
+<img src="Sobel1.jpg" /><br>
+<img src="Sobel2.jpg" />
+
+<hr><br><br><br>
 
 ## 課堂練習二 : 2. Canny 邊緣檢測範例
 ```
