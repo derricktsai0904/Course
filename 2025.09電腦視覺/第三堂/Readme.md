@@ -64,6 +64,9 @@
 #### RGB = 電腦用來「顯示」顏色的方式。
 #### HSI = 人類用來「理解」顏色的方式。
 
+### RGB、HSI 圖形表示 <br>
+<img src="RGB_HSI.jpg" />
+
 
 # jupyter notebook 網址:
 https://jupyter.org/try-jupyter/lab/
