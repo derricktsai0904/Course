@@ -59,6 +59,7 @@
 |RGB	|R、G、B 三個通道 |與硬體相容，運算簡單 | 不直觀，亮度與顏色混雜 | 螢幕顯示、相機成像 |
 |HSI	|H (色相)、S (飽和度)、I (亮度) | 更符合人類感知，可獨立分析亮度與顏色 |轉換計算較複雜 | 影像分析、人臉辨識、醫學影像|
 
+<hr>
 
 ### 簡單理解：
 #### RGB = 電腦用來「顯示」顏色的方式。
@@ -67,6 +68,7 @@
 ### RGB、HSI 圖形表示 <br>
 <img src="RGB_HSI.jpg" />
 
+<hr><br><br><br>
 
 # 三種邊緣檢測方法
 ## Sobel 邊緣檢測
@@ -78,6 +80,8 @@
 <img src="fun1.jpg" /> <br>
 常用近似：<br>
 <img src="fun2.jpg" /> <br>
+
+<hr>
 
 ## Canny 邊緣檢測 <br>
 原理：一種更精確的邊緣檢測演算法，步驟包含： <br>
@@ -91,6 +95,8 @@
 比 Sobel 更能去除雜訊，邊緣更細緻。 <br>
 被廣泛應用於精準邊緣檢測。 <br>
 
+<hr>
+
 ## 角點偵測 (Corner Detection) <br>
 定義：角點是影像中兩個或多個邊緣交會的位置，對於物體匹配與辨識非常重要。 <br>
 常用方法： <br>
@@ -100,6 +106,8 @@ Harris Corner Detector <br>
 Shi-Tomasi 方法 <br>
 Harris 的改良版，直接使用最小特徵值判斷角點，效果更佳。 <br>
 應用：特徵匹配、追蹤、影像拼接、SLAM 等。 <br>
+
+<hr>
 
 ## 總結
 #### Sobel：快速、簡單，適合粗略邊緣檢測。
@@ -111,15 +119,94 @@ Harris 的改良版，直接使用最小特徵值判斷角點，效果更佳。 
 # jupyter notebook 網址:
 https://jupyter.org/try-jupyter/lab/
 
-## 課堂練習一
+## 課堂練習 : 1. Sobel 邊緣檢測範例
+```
+# 匯入必要套件
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 讀取影像 (這裡用 OpenCV 內建的範例圖，或改成你自己的圖檔路徑)
+img = cv2.imread(cv2.samples.findFile("lenna.jpg"))
+if img is None:
+    raise FileNotFoundError("找不到影像，請確認檔案路徑是否正確")
+
+# 轉為灰階
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+# Sobel 邊緣檢測
+sobel_x = cv2.Sobel(gray, cv2.CV_64F, 1, 0, ksize=3)  # X 方向
+sobel_y = cv2.Sobel(gray, cv2.CV_64F, 0, 1, ksize=3)  # Y 方向
+
+# 計算梯度強度
+sobel_combined = cv2.magnitude(sobel_x, sobel_y)
+
+# 顯示結果
+plt.figure(figsize=(12, 6))
+
+plt.subplot(1, 3, 1)
+plt.title("Original (Gray)")
+plt.imshow(gray, cmap='gray')
+plt.axis("off")
+
+plt.subplot(1, 3, 2)
+plt.title("Sobel X")
+plt.imshow(np.abs(sobel_x), cmap='gray')
+plt.axis("off")
+
+plt.subplot(1, 3, 3)
+plt.title("Sobel Y")
+plt.imshow(np.abs(sobel_y), cmap='gray')
+plt.axis("off")
+
+plt.figure(figsize=(6, 6))
+plt.title("Sobel Combined")
+plt.imshow(sobel_combined, cmap='gray')
+plt.axis("off")
+
+plt.show()
 ```
 
+<br><br><br><br>
+
+## 課堂練習二 : 2. Canny 邊緣檢測範例
+```
+# 匯入必要套件
+import cv2
+import matplotlib.pyplot as plt
+
+# 讀取影像 (可改成你自己的檔案路徑，例如 "test.jpg")
+img = cv2.imread(cv2.samples.findFile("lenna.jpg"))
+if img is None:
+    raise FileNotFoundError("找不到影像，請確認檔案路徑是否正確")
+
+# 轉為灰階
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+# 使用 Canny 邊緣檢測
+# 閾值可依需要調整，例如 (100, 200)
+edges = cv2.Canny(gray, threshold1=100, threshold2=200)
+
+# 顯示結果
+plt.figure(figsize=(12, 6))
+
+plt.subplot(1, 2, 1)
+plt.title("Original (Gray)")
+plt.imshow(gray, cmap="gray")
+plt.axis("off")
+
+plt.subplot(1, 2, 2)
+plt.title("Canny Edges")
+plt.imshow(edges, cmap="gray")
+plt.axis("off")
+
+plt.show()
 ```
 
-## 課堂練習一
-```
+### 輸出結果 <br>
+<img src="Canny.jpg" />
 
-```
+<hr><br><br><br>
 
 ## 課堂練習一
 ```
