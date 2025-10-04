@@ -96,6 +96,10 @@ while True:
 <br><br><br>
 
 ## 練習三 : 請應用以上的範例，製作跑馬燈
+
+### 參考電路圖 <br>
+<img src="three.jpg" />
+
 ``` python
 import RPi.GPIO as GPIO
 import time
