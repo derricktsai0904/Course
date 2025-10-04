@@ -215,5 +215,55 @@ plt.show()
 
 ## 課堂練習一
 ```
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+import urllib.request
+import os
 
+
+# 讀取影像並轉灰階
+img = cv2.imread("lenna.jpg")
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+plt.figure(figsize=(5,5))
+plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+plt.title("原始影像")
+plt.axis("off")
+plt.show()
+
+# ---------- Step 2. Harris Corner Detection ----------
+gray_float = np.float32(gray)
+dst = cv2.cornerHarris(gray_float, blockSize=2, ksize=3, k=0.04)
+
+# 膨脹以強化角點
+dst = cv2.dilate(dst, None)
+
+# 設定門檻值並標出角點 (紅色)
+img_harris = img.copy()
+img_harris[dst > 0.01 * dst.max()] = [0, 0, 255]
+
+# ---------- Step 3. Shi-Tomasi Corner Detection ----------
+corners = cv2.goodFeaturesToTrack(gray, maxCorners=100, qualityLevel=0.01, minDistance=10)
+corners = np.int0(corners)
+
+img_tomasi = img.copy()
+for i in corners:
+    x, y = i.ravel()
+    cv2.circle(img_tomasi, (x, y), 5, (0, 255, 0), -1)
+
+# ---------- Step 4. 顯示結果 ----------
+plt.figure(figsize=(12,6))
+
+plt.subplot(1,2,1)
+plt.imshow(cv2.cvtColor(img_harris, cv2.COLOR_BGR2RGB))
+plt.title("Harris Corner Detection")
+plt.axis("off")
+
+plt.subplot(1,2,2)
+plt.imshow(cv2.cvtColor(img_tomasi, cv2.COLOR_BGR2RGB))
+plt.title("Shi-Tomasi Corner Detection")
+plt.axis("off")
+
+plt.show()
 ```
