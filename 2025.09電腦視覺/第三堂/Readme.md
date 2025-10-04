@@ -213,7 +213,7 @@ plt.show()
 
 <hr><br><br><br>
 
-## 課堂練習一
+## 課堂練習三 : 3. 角點偵測 邊緣檢測範例
 ```
 import cv2
 import numpy as np
@@ -245,7 +245,9 @@ img_harris[dst > 0.01 * dst.max()] = [0, 0, 255]
 
 # ---------- Step 3. Shi-Tomasi Corner Detection ----------
 corners = cv2.goodFeaturesToTrack(gray, maxCorners=100, qualityLevel=0.01, minDistance=10)
-corners = np.int0(corners)
+
+# ✅ 修正 np.int0 錯誤，改用 astype(int)
+corners = corners.astype(int)
 
 img_tomasi = img.copy()
 for i in corners:
@@ -267,3 +269,9 @@ plt.axis("off")
 
 plt.show()
 ```
+
+### 輸出結果 <br>
+<img src="co1.jpg" /> <br>
+<img src="co2.jpg" /> <br>
+
+<hr><br><br><br>
