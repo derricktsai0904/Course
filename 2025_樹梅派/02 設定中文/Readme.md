@@ -46,5 +46,8 @@ sudo apt-get install scim-chewing
 ```
 sudo reboot
 ```
-###重新開機後，透過指令 $scim 就能夠開啟輸入法
+
+<br>
+
+### 重新開機後，透過指令 $scim 就能夠開啟輸入法 <br>
 <img src="SCIM07.jpg" width=500 height=500 /><br>
