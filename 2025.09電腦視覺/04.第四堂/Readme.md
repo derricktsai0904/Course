@@ -478,5 +478,61 @@ plt.show()
 
 <hr><hr>
 
+### 將原圖、二值化、膨脹、侵蝕、開運算以及閉運算，放置同一個畫面來比較
+
+```
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+# ✅ 讀取固定圖檔（請自行修改檔名）
+image_path = "lenna.jpg"  # ← 這裡改成你的圖檔名稱
+image = cv2.imread(image_path)
+
+# 檢查是否成功讀取
+if image is None:
+    raise FileNotFoundError(f"找不到圖檔：{image_path}")
+
+# 轉成灰階
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+# 二值化
+_, binary = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
+
+# 設定 kernel 大小（可修改）
+kernel_size = 5
+kernel = np.ones((kernel_size, kernel_size), np.uint8)
+
+# 形態學運算
+dilated = cv2.dilate(binary, kernel, iterations=1)          # 膨脹
+eroded = cv2.erode(binary, kernel, iterations=1)            # 侵蝕
+opened = cv2.morphologyEx(binary, cv2.MORPH_OPEN, kernel)   # 開運算
+closed = cv2.morphologyEx(binary, cv2.MORPH_CLOSE, kernel)  # 閉運算
+
+# 顯示結果
+titles = ['Original', 'Binary', 'Dilation', 'Erosion', 'Openning', 'Closing']
+images = [cv2.cvtColor(image, cv2.COLOR_BGR2RGB), binary, dilated, eroded, opened, closed]
+
+plt.figure(figsize=(6, 12))
+for i in range(6):
+    plt.subplot(3, 2, i + 1)
+    cmap = 'gray' if i != 0 else None
+    plt.imshow(images[i], cmap=cmap)
+    plt.title(titles[i])
+    plt.axis('off')
+
+plt.tight_layout()
+plt.show()
+```
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="12.jpg" /><br>
+<img src="13.jpg" /><br>
+<img src="14.jpg" /><br>
+
 
 
