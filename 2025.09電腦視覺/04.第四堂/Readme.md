@@ -425,6 +425,58 @@ plt.show()
 斷裂的物件連接起來<br>
 物件大小基本保持不變<br>
 
+🔹 應用場景
+填補文字或物體中的小洞<br>
+工業檢測 → 封閉缺陷區域<br>
+醫學影像 → 補全斷裂結構<br>
+前處理 → 去除背景小空洞、連接斷裂物件<br>
+
+#### 總結：<br>
+閉運算就是「先膨脹再侵蝕」，用來填補小黑洞、連接斷裂物體，非常適合修補物件缺口。
+
+
+### 開運算的 Python 實際執行程式範例
+
+```
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+
+# 讀取灰階圖
+img = cv2.imread('lenna.jpg', cv2.IMREAD_GRAYSCALE)
+
+# 二值化
+_, binary = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
+
+# 建立 3x3 結構元素
+kernel = np.ones((3,3), np.uint8)
+
+# 閉運算：先膨脹再侵蝕
+closing = cv2.morphologyEx(binary, cv2.MORPH_CLOSE, kernel)
+
+# 顯示結果
+plt.figure(figsize=(10,5))
+plt.subplot(1,3,1)
+plt.title('Original')
+plt.imshow(binary, cmap='gray')
+plt.axis('off')
+
+plt.subplot(1,3,2)
+plt.title('Closing')
+plt.imshow(closing, cmap='gray')
+plt.axis('off')
+
+plt.show()
+```
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="11.jpg" /><br>
+
+<hr><hr>
 
 
 
