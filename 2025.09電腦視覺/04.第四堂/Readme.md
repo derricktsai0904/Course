@@ -73,4 +73,63 @@
 「膨脹」是一種讓白色物件變大的運算，適合用來連接斷裂區域、填補空洞，是影像形態學中最基本也最常用的技術之一。
 
 
+```
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+# === 1. 讀取影像 ===
+# 將 'your_image.jpg' 改成你要處理的圖檔名稱
+img = cv2.imread('lenna.jpg')
+
+# === 2. 轉為灰階影像 ===
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+# === 3. 二值化處理 ===
+# 這會將影像轉為黑白，方便做膨脹
+_, binary = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
+
+# === 4. 建立結構元素 (Kernel) ===
+kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (7, 7))
+
+# === 5. 執行膨脹運算 ===
+dilated = cv2.dilate(binary, kernel, iterations=1)
+
+# === 6. 顯示結果 ===
+# OpenCV 使用 BGR，Matplotlib 使用 RGB，因此要轉換
+img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+plt.figure(figsize=(15,5))
+
+plt.subplot(1,3,1)
+plt.title('Original')
+plt.imshow(img_rgb)
+plt.axis('off')
+
+plt.subplot(1,3,2)
+plt.title('Binary')
+plt.imshow(binary, cmap='gray')
+plt.axis('off')
+
+plt.subplot(1,3,3)
+plt.title('Dilated')
+plt.imshow(dilated, cmap='gray')
+plt.axis('off')
+
+plt.tight_layout()
+plt.show()
+```
+<br><br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="05.jpg" /><br>
+
+<hr><hr>
+
+
+
+
 
