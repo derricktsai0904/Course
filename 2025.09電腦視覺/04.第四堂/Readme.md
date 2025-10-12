@@ -530,9 +530,9 @@ plt.show()
 執行結果
 ===========
 
-<img src="12.jpg" /><br>
-<img src="13.jpg" /><br>
-<img src="14.jpg" /><br>
+<img src="12.jpg" width=400 height=300 /><br>
+<img src="13.jpg" width=400 height=300 /><br>
+<img src="14.jpg" width=400 height=300  /><br>
 
 
 
