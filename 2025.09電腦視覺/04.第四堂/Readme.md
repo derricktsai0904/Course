@@ -285,7 +285,14 @@ plt.show()
 
 ### ◎ 開運算的用法 <br>
 
+#### 在 影像形態學（Morphological Image Processing） 中，開運算（Opening） 是一種**先侵蝕（Erosion）再膨脹（Dilation）**的組合運算。
+它的主要作用是：<br>
+去除影像中的小型雜訊（白色小點）<br>
+保持較大物體的形狀不變<br>
+常用於二值化影像的前處理<br>
 
+#### 概念
+<img src="08.jpg" /><br>
 
 
 
