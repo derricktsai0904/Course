@@ -73,6 +73,8 @@
 「膨脹」是一種讓白色物件變大的運算，適合用來連接斷裂區域、填補空洞，是影像形態學中最基本也最常用的技術之一。
 
 
+### 膨脹的 Python 實際執行程式範例
+
 ```
 import cv2
 import numpy as np
@@ -169,6 +171,53 @@ plt.show()
 移除小的白色雜訊點。<br>
 讓物體邊緣收縮，用於特徵提取。<br>
 在「膨脹」前進行侵蝕，可組合成「開運算」，用於影像平滑處理。<br>
+
+### 侵蝕的 Python 實際執行程式範例
+
+```
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+# === 1. 讀取固定圖檔 ===
+# 將 'your_image.jpg' 改成你要處理的圖檔路徑
+img = cv2.imread('lenna.jpg', cv2.IMREAD_GRAYSCALE)
+
+# === 2. 二值化影像 ===
+_, binary = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
+
+# === 3. 建立結構元素 (Kernel) ===
+kernel = np.ones((3,3), np.uint8)
+
+# === 4. 執行侵蝕 ===
+erosion = cv2.erode(binary, kernel, iterations=1)
+
+# === 5. 顯示結果 ===
+plt.figure(figsize=(12,5))
+
+plt.subplot(1,3,1)
+plt.title('Original')
+plt.imshow(img, cmap='gray')
+plt.axis('off')
+
+plt.subplot(1,3,2)
+plt.title('Binary')
+plt.imshow(binary, cmap='gray')
+plt.axis('off')
+
+plt.subplot(1,3,3)
+plt.title('Erosion')
+plt.imshow(erosion, cmap='gray')
+plt.axis('off')
+
+plt.tight_layout()
+plt.show()
+```
+
+==========
+執行結果
+==========
+<img src="06.jpg" /><br>
 
 
 
