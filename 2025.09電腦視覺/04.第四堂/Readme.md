@@ -292,7 +292,7 @@ plt.show()
 常用於二值化影像的前處理<br>
 
 #### 概念
-<img src="08.jpg" /><br>
+<img src="08.jpg" width=600 height=500 /><br>
 
 
 
