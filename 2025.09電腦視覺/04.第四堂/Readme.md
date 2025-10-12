@@ -21,6 +21,9 @@
 <hr><hr>
 
 ### ◎ 膨脹的用法
+
+<hr>
+
 概念
 膨脹是將影像中「白色物件（前景）」往外擴張的形態學運算。
 
@@ -133,6 +136,9 @@ plt.show()
 <hr><hr>
 
 ### ◎ 侵蝕的用法 <br>
+
+<hr>
+
 概念 <br>
 在 影像形態學（Mathematical Morphology） 中，「侵蝕」（Erosion）是一種與「膨脹」相反的運算方式。<br>
 ##### 使用一個 結構元素（Kernel） 在影像上滑動。
@@ -285,6 +291,8 @@ plt.show()
 
 ### ◎ 開運算的用法 <br>
 
+<hr>
+
 #### 在 影像形態學（Morphological Image Processing） 中，開運算（Opening） 是一種**先侵蝕（Erosion）再膨脹（Dilation）**的組合運算。
 它的主要作用是：<br>
 去除影像中的小型雜訊（白色小點）<br>
@@ -306,7 +314,7 @@ plt.show()
 0 0 0 0 0 0 0
 ```
 
-左邊的小白點是雜訊<br>
+右邊的小白點是雜訊<br>
 中間大的白塊是主要物件<br>
 
 使用 3×3 Kernel 開運算 後：
@@ -322,15 +330,58 @@ plt.show()
 小白點雜訊被去掉<br>
 大白塊基本形狀保留<br>
 
-#### 開運算應用場景
+#### 應用場景
 
 。 去除二值化影像的小白點雜訊 <br>
 。 分離物件間的小連接 <br>
 。 OCR 前處理 → 清除破碎筆劃 <br>
 。 工業檢測 → 去掉小型瑕疵或灰塵 <br>
 
+#### 總結：
 
+開運算就是「先吃掉雜訊，再恢復物體大小」，非常適合清理影像中的小白點或細小干擾。
 
+### 開運算的 Python 實際執行程式範例
 
+```
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+
+# 讀取灰階圖
+img = cv2.imread('input.jpg', cv2.IMREAD_GRAYSCALE)
+
+# 二值化
+_, binary = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
+
+# 建立 3x3 結構元素
+kernel = np.ones((3,3), np.uint8)
+
+# 開運算：先侵蝕再膨脹
+opening = cv2.morphologyEx(binary, cv2.MORPH_OPEN, kernel)
+
+# 顯示結果
+plt.figure(figsize=(10,5))
+plt.subplot(1,3,1)
+plt.title('Original')
+plt.imshow(binary, cmap='gray')
+plt.axis('off')
+
+plt.subplot(1,3,2)
+plt.title('Opening')
+plt.imshow(opening, cmap='gray')
+plt.axis('off')
+
+plt.show()
+```
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="09.jpg" /><br>
+
+<hr><hr>
 
 
