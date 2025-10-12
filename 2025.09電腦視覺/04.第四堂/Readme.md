@@ -391,7 +391,7 @@ plt.show()
 影像形態學（Morphological Image Processing） 中，閉運算（Closing） 是一種**先膨脹（Dilation）再侵蝕（Erosion）**的組合運算。
 
 概念<br>
-<img src="10.jpg" /><br>
+<img src="10.jpg" width=600 height=500 /><br>
 
 
 #### 範例說明
@@ -424,6 +424,7 @@ plt.show()
 小黑洞被填補<br>
 斷裂的物件連接起來<br>
 物件大小基本保持不變<br>
+
 
 
 
