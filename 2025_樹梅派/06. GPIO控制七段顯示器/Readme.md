@@ -28,7 +28,11 @@
 <br>
 
 <hr>
+
 練習一 : 接好以上電路之後，請執行以下程式範例，是否會出現 『數字 3』。
+
+<hr>
+
 ``` python
 import RPi.GPIO as GPIO
 import time
