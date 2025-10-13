@@ -25,6 +25,24 @@
 <img src="01.jpg" width=1000 height=800 /> <br>
 
 <br>
+
+## 七段顯示器個數字字型對應各腳腳位。
+
+|字型 | dp | g | f | e | d | c | b | a |
+|----|----|----|----|----|----|----|----|----|
+| ０ | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 |
+|１ | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |
+|２ | 0 | 1 | 0 | 1 | 1 | 0 | 1 | 1 |
+|３ | 0 | 1 | 0 | 0 | 1 | 1 | 1 | 1 |
+|４ | 0 | 1 | 1 | 0 | 0 | 1 | 1 | 0 |
+|５ | 0 | 1 | 1 | 0 | 1 | 1 | 0 | 1 |
+|６ | 0 | 1 | 1 | 1 | 1 | 1 | 0 | 1 |
+|７ | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 1 |
+|８ | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+|９ | 0 | 1 | 1 | 0 | 1 | 1 | 1 | 1 |
+
+
+
 <br>
 
 <hr>
@@ -61,7 +79,7 @@ GPIO.output(24,True) #g
 
 <hr>
 
-練習二 : 接好以上電路之後，請執行以下程式範例，是否會出現 數字由 0 至 9 每隔一秒的變換。
+練習二 : 接好以上電路之後，請執行以下程式範例，是否會出現 數字由 1 至 0 每隔一秒的變換。
 
 <hr>
 
@@ -98,7 +116,7 @@ while(True):
 
 <hr>
 
-<a href="https://www.youtube.com/watch?v=0RDsPNCU6DA" target="_blank">樹梅派控制七段顯示器 (0 -> 9 )</a><br>
+<a href="https://www.youtube.com/watch?v=0RDsPNCU6DA" target="_blank">樹梅派控制七段顯示器 (1 -> 0 )</a><br>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=0RDsPNCU6DA" target="_blank"><img src="http://img.youtube.com/vi/0RDsPNCU6DA/0.jpg" 
 alt="樹梅派控制七段顯示器" width="400" height="250" border="10" /></a>
 <br>影片取自 youtube
