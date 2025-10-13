@@ -24,5 +24,29 @@
 <hr>
 <img src="01.jpg" width=1000 height=800 /> <br>
 
+<br>
+<br>
+
+<hr>
+練習一 : 接好以上電路之後，請執行以下程式範例，是否會出現 『數字 3』。
+``` python
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BOARD)
+for x in range(len(pin)):
+     GPIO.setup(pin[x], GPIO.OUT)
+
+GPIO.output( 8,False) #a
+GPIO.output(10,False) #b
+GPIO.output(12,False) #c
+GPIO.output(16,False) #d
+GPIO.output(18,True) #e
+GPIO.output(22,True) #f
+GPIO.output(24,False) #g
+```
+
+
+
 
 
