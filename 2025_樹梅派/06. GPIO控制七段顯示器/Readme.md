@@ -37,18 +37,31 @@
 import RPi.GPIO as GPIO
 import time
 
-GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BOARD)    # 設定依樹梅派腳位的數字編號
+
+pin = [8,10,12,16,18,22,24] # 樹梅派對應 a - g 的腳位
+
 for x in range(len(pin)):
      GPIO.setup(pin[x], GPIO.OUT)
 
-GPIO.output( 8,False) #a
-GPIO.output(10,False) #b
-GPIO.output(12,False) #c
-GPIO.output(16,False) #d
-GPIO.output(18,True) #e
-GPIO.output(22,True) #f
-GPIO.output(24,False) #g
+GPIO.output(8,True) #a
+GPIO.output(10,True) #b
+GPIO.output(12,True) #c
+GPIO.output(16,True) #d
+GPIO.output(18,False) #e
+GPIO.output(22,False) #f
+GPIO.output(24,True) #g
 ```
+
+====== 顯示結果 ====== <br>
+
+<hr>
+
+<img src="exam1.jpg" width=300 height=400 /> <br>
+
+<hr>
+
+
 
 
 
