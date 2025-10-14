@@ -34,6 +34,12 @@ alt="智慧農業" width="800" height="400" border="10" /></a>
 
 <br><br>
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=wLvnJMY0ouQ" target="_blank"><img src="http://img.youtube.com/vi/wLvnJMY0ouQ/0.jpg" 
+alt="智慧農業" width="800" height="400" border="10" /></a>
+<br>影片取自 youtube
+
+<br><br>
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=1Asf2yRIwlo" target="_blank"><img src="http://img.youtube.com/vi/1Asf2yRIwlo/0.jpg" 
 alt="智慧農業" width="800" height="400" border="10" /></a>
 <br>影片取自 youtube
