@@ -22,6 +22,61 @@
 #### > 若像素值 > T → 設為白色 (1)
 #### > 否則 → 設為黑色 (0)
 
+#### 請參考以下程式，實作全域閥值的練習。
+```
+import cv2
+import matplotlib.pyplot as plt
+
+# 讀取影像（灰階模式）
+# 👉 請將 'sample.jpg' 換成你本地的圖片檔名
+img = cv2.imread('lenna.jpg', cv2.IMREAD_GRAYSCALE)
+
+# 設定全域閾值 T = 127
+T1 = 100
+_, th1 = cv2.threshold(img, T1, 255, cv2.THRESH_BINARY)
+
+T2 = 127
+_, th2 = cv2.threshold(img, T2, 255, cv2.THRESH_BINARY)
+
+T3 = 150
+_, th3 = cv2.threshold(img, T3, 255, cv2.THRESH_BINARY)
+
+# 顯示原圖與閾值化結果
+plt.figure(figsize=(16,5))
+
+plt.subplot(1,4,1)
+plt.imshow(img, cmap='gray')
+plt.title('Original Image')
+plt.axis('off')
+
+plt.subplot(1,4,2)
+plt.imshow(th1, cmap='gray')
+plt.title(f'Global Threshold T={T1}')
+plt.axis('off')
+
+plt.subplot(1,4,3)
+plt.imshow(th2, cmap='gray')
+plt.title(f'Global Threshold T={T2}')
+plt.axis('off')
+
+plt.subplot(1,4,4)
+plt.imshow(th3, cmap='gray')
+plt.title(f'Global Threshold T={T3}')
+plt.axis('off')
+
+plt.show()
+```
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="01.jpg" /><br>
+
+<hr><hr>
+
+
 #### (2). Otsu 閾值法
 #### > 自動計算最佳閾值，最大化類間變異數。
 #### > 不需人工設定 T。
