@@ -274,6 +274,171 @@ plt.show()
 
 <hr><hr>
 
+## 邊緣導向分割原理
+#### 邊緣導向分割的核心步驟：
+#### > 使用邊緣偵測（例如 Canny 邊緣偵測）找出影像中的邊界。
+#### > 將邊緣結果視為區域的邊界，協助影像分割。
+#### > 可搭配形態學操作修補破碎邊緣，形成封閉區域。
+
+====================================================<br>
+#### 邊緣導向分割程式，實作全域閥值的練習 。
+====================================================<br>
+```python
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 讀取影像（灰階）
+# 👉 請將 'sample.jpg' 換成你的影像檔名
+img = cv2.imread('lenna.jpg', cv2.IMREAD_GRAYSCALE)
+
+# Step 1: Canny 邊緣偵測
+edges = cv2.Canny(img, 100, 200)
+
+# Step 2: 形態學膨脹，讓邊緣連續
+kernel = np.ones((3,3), np.uint8)
+dilated = cv2.dilate(edges, kernel, iterations=1)
+
+# Step 3: 反轉邊緣區域，準備做遮罩
+mask = cv2.bitwise_not(dilated)
+
+# Step 4: 分割 — 使用遮罩將目標與背景分離
+segmented = cv2.bitwise_and(img, img, mask=mask)
+
+# Step 5: 顯示結果
+plt.figure(figsize=(10,5))
+
+plt.subplot(2,2,1)
+plt.imshow(img, cmap='gray')
+plt.title('Original Image')
+plt.axis('off')
+
+plt.subplot(2,2,2)
+plt.imshow(edges, cmap='gray')
+plt.title('Canny Edges')
+plt.axis('off')
+
+plt.subplot(2,2,3)
+plt.imshow(dilated, cmap='gray')
+plt.title('Dilated Edges')
+plt.axis('off')
+
+plt.subplot(2,2,4)
+plt.imshow(segmented, cmap='gray')
+plt.title('Edge-based Segmentation Result')
+plt.axis('off')
+
+plt.tight_layout()
+plt.show()
+```
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="05.jpg" /><br>
+
+<hr><hr>
+
+
+分水嶺演算法（Watershed Algorithm）」是一種非常經典且實用的影像分割技術。
+它尤其適合處理「物件邊緣清楚但相互接近或接觸」的影像，例如硬幣、膠囊、細胞等。
+
+## 分水嶺演算法基本流程
+#### > 影像前處理（灰階、高斯模糊等）
+#### > 二值化（如 Otsu 閾值法）
+#### > 形態學操作（去除雜訊、獲取背景/前景）
+#### > 標記（Marker）區域（確定前景與背景）
+#### > 套用分水嶺演算法
+#### > 顯示結果（通常用顏色標出邊界）
+
+====================================================<br>
+#### 分水嶺演算法程式，實作練習 。
+====================================================<br>
+```python
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Step 1: 讀取影像
+# 👉 請將 'coins.jpg' 換成你的影像檔名
+img = cv2.imread('lenna.jpg')
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+# Step 2: Otsu 閾值二值化（反白）
+_, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+
+# Step 3: 形態學操作 - 去除雜訊
+kernel = np.ones((3,3), np.uint8)
+opening = cv2.morphologyEx(thresh, cv2.MORPH_OPEN, kernel, iterations=2)
+
+# Step 4: 確定背景區域
+sure_bg = cv2.dilate(opening, kernel, iterations=3)
+
+# Step 5: 確定前景區域
+dist_transform = cv2.distanceTransform(opening, cv2.DIST_L2, 5)
+_, sure_fg = cv2.threshold(dist_transform, 0.7*dist_transform.max(), 255, 0)
+sure_fg = np.uint8(sure_fg)
+
+# Step 6: 找出未知區域
+unknown = cv2.subtract(sure_bg, sure_fg)
+
+# Step 7: 標記 Marker
+_, markers = cv2.connectedComponents(sure_fg)
+markers = markers + 1
+markers[unknown == 255] = 0
+
+# Step 8: 套用分水嶺演算法
+img_mark = img.copy()
+cv2.watershed(img_mark, markers)
+img_mark[markers == -1] = [0, 0, 255]  # 邊界標紅
+
+# Step 9: 顯示結果
+plt.figure(figsize=(10,5))
+
+plt.subplot(2,3,1)
+plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+plt.title('Original Image')
+plt.axis('off')
+
+plt.subplot(2,3,2)
+plt.imshow(thresh, cmap='gray')
+plt.title('Binary (Otsu)')
+plt.axis('off')
+
+plt.subplot(2,3,3)
+plt.imshow(sure_bg, cmap='gray')
+plt.title('Sure Background')
+plt.axis('off')
+
+plt.subplot(2,3,4)
+plt.imshow(sure_fg, cmap='gray')
+plt.title('Sure Foreground')
+plt.axis('off')
+
+plt.subplot(2,3,5)
+plt.imshow(unknown, cmap='gray')
+plt.title('Unknown Region')
+plt.axis('off')
+
+plt.subplot(2,3,6)
+plt.imshow(cv2.cvtColor(img_mark, cv2.COLOR_BGR2RGB))
+plt.title('Watershed Result')
+plt.axis('off')
+
+plt.tight_layout()
+plt.show()
+```
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="06.jpg" /><br>
+
+<hr><hr>
 
 
 
