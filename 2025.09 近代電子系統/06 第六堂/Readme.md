@@ -47,6 +47,11 @@ alt="智慧農業" width="800" height="400" border="10" /></a>
 alt="智慧農業" width="800" height="400" border="10" /></a>
 <br>影片取自 youtube
 
+# 智慧農業
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Im3o5HJVw7Q" target="_blank"><img src="http://img.youtube.com/vi/Im3o5HJVw7Q/0.jpg" 
+alt="智慧農業" width="800" height="400" border="10" /></a>
+<br>影片取自 youtube
+
 <br><br><br><br><br>
 # 智慧零售
 智慧零售是零售業邁向產業升級的一環，以商店數位化為首，包括了行動支付、物聯網技術、無人智慧商店、會員數據分析等多種面向的數位升級。透過線上官網、會員APP、購物平台等管道蒐羅客戶購買習慣，優化消費者購買流程與服務體驗，建立起零售業智慧管理系統。
