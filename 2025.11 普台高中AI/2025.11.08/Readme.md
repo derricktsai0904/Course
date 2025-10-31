@@ -8,19 +8,21 @@
 > 語音辨識（例如 Siri、Google 助理） <br>
 > 圖像辨識（例如 臉部辨識、醫學影像診斷） <br>
 > 自然語言理解（例如 ChatGPT、翻譯系統）<br>
-> 自主決策（例如 自駕車、推薦系統）<br>
+> 自主決策（例如 自駕車、推薦系統）<br><br><br>
  
 <hr>
 
 #### 二、人工智慧的演進歷史 <br>
-<img src="history.jpg"  width=800 height=600  /><br>
+<img src="history.jpg"  width=800 height=600  /><br><br><br>
+
+<hr>
 
 #### 三、人工智慧、機器學習以及深度學習 <br>
 下圖為三種方式的比較圖<br>
 
 <hr>
 
-<img src="compare.jpg" width=800 height=600 /><br>
+<img src="compare.jpg" width=800 height=600 /><br><br><br>
 
 <hr>
 
@@ -28,7 +30,7 @@
 
 <hr>
 
-<img src="structure.jpg"  width=800 height=600  />
+<img src="structure.jpg"  width=800 height=600  /><br><br>
 
 <hr>
 
@@ -37,7 +39,7 @@
 > 深度學習（Deep Learning）：使用神經網路模仿人腦運作，進行更複雜的判斷。 <br>
 > 自然語言處理（NLP）：讓電腦能理解與生成人類語言。 <br>
 > 電腦視覺（Computer Vision）：讓電腦能看懂圖像與影片。 <br>
-> 專家系統（Expert System）：模擬人類專家的推理過程。 <br>
+> 專家系統（Expert System）：模擬人類專家的推理過程。 <br><br><br>
 
 <hr>
 
@@ -50,10 +52,8 @@
 |產業	| 智慧製造、預測維修 |
 |金融	| 信用評估、詐欺偵測、投資分析|
 |日常生活	|智慧音箱、推薦系統、語音助理|
-
+<br><br><br>
 <hr>
-
-
 
 <hr>
 
