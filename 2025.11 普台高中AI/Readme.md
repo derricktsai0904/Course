@@ -4,5 +4,5 @@
 
 ### 課程資料連結如下 QRCode <br>
 
-<img src="aiqrcode.png" />
+<img src="qrcode1031.png" />
 
