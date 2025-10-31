@@ -55,3 +55,19 @@
 
 
 
+<hr>
+
+#### 七、 CNN 捲機神經網路 實作練習 <br>
+請使用具有筆記型電腦(含WebCam鏡頭) 或是 使用一般 PC 電腦另外接上 USB WebCam。<br><br>
+
+##### 步驟一 : 請開啟以下網址 <br>
+https://teachablemachine.withgoogle.com/<br><br>
+
+##### 步驟二 : 點選 Get Started <br>
+<img src="step2.jpg" width=800 height=600 /><br><br>
+
+##### 步驟三 : 選取 Image Project <br>
+<img src="step3.jpg" width=800 height=600 /><br><br>
+
+
+
