@@ -83,5 +83,21 @@ https://teachablemachine.withgoogle.com/<br><br>
 ##### 步驟六: 請修改 Class1 改成 戴口罩，另外修改 Class2 改成 沒戴口罩 <br>
 <img src="step6.jpg" width=600 height=400 /><br><br>
 
+##### 步驟七: 請在 "戴口罩"區點選 WebCam <br>
+<img src="step7.jpg" width=600 height=400 /><br><br>
+
+##### 步驟八: 請你先戴口罩面對 WebCam 鏡頭，然後點選 Hold to Record，點選當下請隨意微擺動你的頭部，讓鏡頭可以接收到不同角度的影像 <br>
+<img src="step8.jpg" width=600 height=400 /><br><br>
+
+##### 步驟九: 重複步驟七、八，請在"沒戴口罩"區點選 WebCam，除掉口罩後面對WebCam鏡頭，再點選 Hold to Record 錄製不同角度的影像 <br>
+<img src="step9.jpg" width=600 height=400 /><br><br>
+
+##### 步驟十: 拍好兩種類別照片後，請點選 Training 按鈕，進行影像辨識訓練，如果有出現 "Don't switch tabs !" 訊息，請點選 OK 即可 <br>
+<img src="step10.jpg" width=600 height=400 /><br><br>
+
+##### 步驟十一: 訓練完畢以後，請面對鏡頭進行戴口罩或是不戴口罩的測試，看看系統判斷的機率有多少 ? <br>
+<img src="step11.jpg" width=600 height=400 /><br><br>
+
+
 
 
