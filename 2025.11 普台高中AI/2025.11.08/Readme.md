@@ -69,10 +69,19 @@
 https://teachablemachine.withgoogle.com/<br><br>
 
 ##### 步驟二 : 點選 Get Started <br>
-<img src="step2.jpg" width=800 height=600 /><br><br>
+<img src="step2.jpg" width=600 height=400 /><br><br>
 
 ##### 步驟三 : 選取 Image Project <br>
-<img src="step3.jpg" width=800 height=600 /><br><br>
+<img src="step3.jpg" width=600 height=400 /><br><br>
+
+##### 步驟四 : 選取 Standard Image Model <br>
+<img src="step4.jpg" width=600 height=400 /><br><br>
+
+##### 步驟五: 進入到 CNN 實作主畫面 <br>
+<img src="step5.jpg" width=600 height=400 /><br><br>
+
+##### 步驟六: 請修改 Class1 改成 戴口罩，另外修改 Class2 改成 沒戴口罩 <br>
+<img src="step6.jpg" width=600 height=400 /><br><br>
 
 
 
