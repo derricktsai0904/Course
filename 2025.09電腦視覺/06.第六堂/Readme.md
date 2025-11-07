@@ -13,7 +13,34 @@
 | **仿射變換（Affine Transformation）**                   | 維持平行線但可改變角度與比例 | <img src="f5.jpg" />                                   |
 | **透視變換（Perspective / Projective Transformation）** | 模擬相機視角、透視效果    | 使用3×3矩陣進行齊次座標轉換                                 |
 
-['Original', 'Translated', 'Rotated', 'Scaled', 'Affine', 'Perspective']
+<br>
+
+🧭 二、座標變換（Coordinate Transformation）
+
+座標變換是針對不同座標系統之間的轉換，例如：
+影像座標系（pixel coordinates）
+世界座標系（world coordinates）
+相機座標系（camera coordinates）
+
+它描述了影像中某個像素對應到現實世界中實際位置的方式，這是相機校正、3D重建、深度估測的重要步驟。
+
+🎯 座標系轉換流程
+
+1.世界座標 (World Coordinates)<br>
+表示物體在現實空間的真實位置（Xw, Yw, Zw）。<br>
+
+2.相機座標 (Camera Coordinates)<br>
+經過相機外部參數（旋轉矩陣 R、平移向量 T）轉換：<br>
+<img src="g2.jpg" /><br>
+
+3.影像座標 (Image Coordinates)<br>
+經過透視投影，將三維點投影到二維平面：<br>
+<img src="g3.jpg" /><br>
+
+4.像素座標 (Pixel Coordinates)<br>
+經過相機內部參數（焦距、主點偏移、像素尺寸）得到實際像素位置：<>
+<img src="g4.jpg" /><br>
+
 
 ====================================================<br>
 #### 影像平移、旋轉、縮放、仿射變換、透視變換 練習
