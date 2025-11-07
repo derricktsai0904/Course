@@ -81,8 +81,11 @@
 <br>
 
 <hr>
-ImageNet 大賽
+ImageNet 大規模視覺辨識挑戰賽 (ImageNet Large Scale Visual Recognition Challenge) 或 ILSVRC
 <hr>
+
+##### > 2015 年： 微軟研究院的 ResNet（殘差網絡） 登場，其 Top-5 錯誤率降至 3.57%，首次在該特定任務上超越了人類的平均表現（約 5.1%）。
+##### > 2017 年： 由於模型的準確率已趨於飽和（超過 29 個團隊的錯誤率低於 5%），ILSVRC 的主要分類挑戰賽迎來了最後一屆，其歷史使命已基本完成。
 
 <img src="imagenetgame.jpg" />
 
