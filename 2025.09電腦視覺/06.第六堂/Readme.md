@@ -13,9 +13,12 @@
 | **仿射變換（Affine Transformation）**                   | 維持平行線但可改變角度與比例 | <img src="f5.jpg" />                                   |
 | **透視變換（Perspective / Projective Transformation）** | 模擬相機視角、透視效果    | 使用3×3矩陣進行齊次座標轉換                                 |
 
+['Original', 'Translated', 'Rotated', 'Scaled', 'Affine', 'Perspective']
 
-
-
+====================================================<br>
+#### 影像平移、旋轉、縮放、仿射變換、透視變換 練習
+====================================================<br>
+```python
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
@@ -67,3 +70,5 @@ for i in range(6):
     plt.axis('off')
 plt.tight_layout()
 plt.show()
+```
+
