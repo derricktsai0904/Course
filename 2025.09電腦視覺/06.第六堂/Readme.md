@@ -26,26 +26,26 @@
 
 🎯 座標系轉換流程
 
-1.世界座標 (World Coordinates)<br>
+##### 1.世界座標 (World Coordinates)<br>
 表示物體在現實空間的真實位置（Xw, Yw, Zw）。<br>
 
-2.相機座標 (Camera Coordinates)<br>
+##### 2.相機座標 (Camera Coordinates)<br>
 經過相機外部參數（旋轉矩陣 R、平移向量 T）轉換：<br>
 <img src="g2.jpg" /><br>
 
-3.影像座標 (Image Coordinates)<br>
+##### 3.影像座標 (Image Coordinates) <br>
 經過透視投影，將三維點投影到二維平面：<br>
 <img src="g3.jpg" /><br>
 
-4.像素座標 (Pixel Coordinates)<br>
-經過相機內部參數（焦距、主點偏移、像素尺寸）得到實際像素位置：<>
+##### 4.像素座標 (Pixel Coordinates)<br>
+經過相機內部參數（焦距、主點偏移、像素尺寸）得到實際像素位置：<br>
 <img src="g4.jpg" /><br>
 
-🧠 三、應用實例
-影像對齊與拼接（Panorama Stitching）
-校正傾斜的文件影像
-攝影機視角矯正（如道路標線視角轉正）
-機器人定位與3D視覺
+##### 🧠 三、應用實例<br>
+影像對齊與拼接（Panorama Stitching）<br>
+校正傾斜的文件影像<br>
+攝影機視角矯正（如道路標線視角轉正）<br>
+機器人定位與3D視覺<br>
 
 ====================================================<br>
 #### 影像平移、旋轉、縮放、仿射變換、透視變換 練習
@@ -103,4 +103,13 @@ for i in range(6):
 plt.tight_layout()
 plt.show()
 ```
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="example1.jpg" /><br>
+
+<hr><hr>
 
