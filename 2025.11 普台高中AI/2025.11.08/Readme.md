@@ -161,5 +161,18 @@ https://teachablemachine.withgoogle.com/<br><br>
 <img src="step11.jpg" width=600 height=400 /><br><br>
 
 
+#### 實際案例應用
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=vM7n9k_7go8" target="_blank"><img src="http://img.youtube.com/vi/vM7n9k_7go8/0.jpg" 
+alt="Nx應用人工智慧" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube
+
+
+
+
+
+
+
+
 
 
