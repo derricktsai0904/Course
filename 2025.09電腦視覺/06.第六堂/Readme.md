@@ -113,3 +113,117 @@ plt.show()
 
 <hr><hr>
 
+
+====================================================<br>
+#### 影像平移 (Translated) 練習
+====================================================<br>
+```python
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+
+# 讀取影像
+img = cv2.imread('lenna.jpg')  # 可改成自己的影像路徑
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # 轉成RGB方便顯示
+
+h, w = img.shape[:2]
+
+# ====== 1️⃣ 平移 (Translation) ======
+tx, ty = 50, 50  # x向右移50, y向下移50
+M_translate1 = np.float32([[1, 0, tx],
+                          [0, 1, ty]])
+
+tx, ty = 100, 50  # x向右移100, y向下移50
+M_translate2 = np.float32([[1, 0, tx],
+                          [0, 1, ty]])
+
+tx, ty = 100, 100  # x向右移100, y向下移100
+M_translate3 = np.float32([[1, 0, tx],
+                          [0, 1, ty]])
+
+translated1 = cv2.warpAffine(img, M_translate1, (w, h))
+translated2 = cv2.warpAffine(img, M_translate2, (w, h))
+translated3 = cv2.warpAffine(img, M_translate3, (w, h))
+
+
+# ====== 顯示結果 ======
+titles = ['Original', 'Translated 50,50','Translated 100,50','Translated 100,100']
+images = [img, translated1,translated2,translated3]
+
+plt.figure(figsize=(12,8))
+for i in range(4):
+    plt.subplot(1,4,i+1)
+    plt.imshow(images[i])
+    plt.title(titles[i])
+    plt.axis('off')
+
+plt.tight_layout()
+plt.show()
+```
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="show1.jpg" /><br>
+
+<hr><hr>
+
+
+====================================================<br>
+#### 影像旋轉 (Rotation) 練習
+====================================================<br>
+```python
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+
+# 讀取影像
+img = cv2.imread('lenna.jpg')  # 可改成自己的影像路徑
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # 轉成RGB方便顯示
+
+h, w = img.shape[:2]
+
+# ====== 2️⃣ 旋轉 (Rotation) ======
+angle = 15
+scale = 1.0
+M_rotate = cv2.getRotationMatrix2D((w//2, h//2), angle, scale)
+rotated1 = cv2.warpAffine(img, M_rotate, (w, h))
+
+angle = 45
+scale = 1.2
+M_rotate = cv2.getRotationMatrix2D((w//2, h//2), angle, scale)
+rotated2 = cv2.warpAffine(img, M_rotate, (w, h))
+
+angle = 60
+scale = 1.5
+M_rotate = cv2.getRotationMatrix2D((w//2, h//2), angle, scale)
+rotated3 = cv2.warpAffine(img, M_rotate, (w, h))
+
+
+# ====== 顯示結果 ======
+titles = ['Original', 'Rotated 15,1.0', 'Rotated 45,1.2', 'Rotated 60,1.5']
+images = [img, rotated1, rotated2, rotated3]
+
+plt.figure(figsize=(10,4))
+for i in range(4):
+    plt.subplot(1,4,i+1)
+    plt.imshow(images[i])
+    plt.title(titles[i])
+    plt.axis('off')
+plt.tight_layout()
+plt.show()
+```
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="show2.jpg" /><br>
+
+<hr><hr>
+
+
+
