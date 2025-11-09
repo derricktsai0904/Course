@@ -47,72 +47,6 @@
 攝影機視角矯正（如道路標線視角轉正）<br>
 機器人定位與3D視覺<br>
 
-====================================================<br>
-#### 影像平移、旋轉、縮放、仿射變換、透視變換 練習
-====================================================<br>
-```python
-import cv2
-import numpy as np
-from matplotlib import pyplot as plt
-
-# 讀取影像
-img = cv2.imread('lenna.jpg')  # 可改成自己的影像路徑
-img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # 轉成RGB方便顯示
-
-h, w = img.shape[:2]
-
-# ====== 1️⃣ 平移 (Translation) ======
-tx, ty = 100, 50  # x向右移100, y向下移50
-M_translate = np.float32([[1, 0, tx],
-                          [0, 1, ty]])
-translated = cv2.warpAffine(img, M_translate, (w, h))
-
-# ====== 2️⃣ 旋轉 (Rotation) ======
-angle = 45
-scale = 1.0
-M_rotate = cv2.getRotationMatrix2D((w//2, h//2), angle, scale)
-rotated = cv2.warpAffine(img, M_rotate, (w, h))
-
-# ====== 3️⃣ 縮放 (Scaling) ======
-scaled = cv2.resize(img, None, fx=0.5, fy=0.5)
-
-# ====== 4️⃣ 仿射變換 (Affine Transform) ======
-# 三組對應點
-pts1 = np.float32([[50, 50], [200, 50], [50, 200]])
-pts2 = np.float32([[10, 100], [200, 50], [100, 250]])
-M_affine = cv2.getAffineTransform(pts1, pts2)
-affined = cv2.warpAffine(img, M_affine, (w, h))
-
-# ====== 5️⃣ 透視變換 (Perspective Transform) ======
-# 四組對應點
-pts1 = np.float32([[50, 50], [450, 50], [50, 300], [450, 300]])
-pts2 = np.float32([[10, 100], [480, 50], [100, 350], [400, 300]])
-M_perspective = cv2.getPerspectiveTransform(pts1, pts2)
-perspective = cv2.warpPerspective(img, M_perspective, (w, h))
-
-# ====== 顯示結果 ======
-titles = ['Original', 'Translated', 'Rotated', 'Scaled', 'Affine', 'Perspective']
-images = [img, translated, rotated, scaled, affined, perspective]
-
-plt.figure(figsize=(12,8))
-for i in range(6):
-    plt.subplot(2,3,i+1)
-    plt.imshow(images[i])
-    plt.title(titles[i])
-    plt.axis('off')
-plt.tight_layout()
-plt.show()
-```
-<br>
-<hr>
-===========
-執行結果
-===========
-
-<img src="example1.jpg" /><br>
-
-<hr><hr>
-
 
 ====================================================<br>
 #### 影像平移 (Translated) 練習
@@ -226,4 +160,229 @@ plt.show()
 <hr><hr>
 
 
+====================================================<br>
+#### 影像縮放 (Scaled) 練習
+====================================================<br>
+```python
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
 
+# 讀取影像
+img = cv2.imread('lenna.jpg')  # 可改成自己的影像路徑
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # 轉成RGB方便顯示
+
+h, w = img.shape[:2]
+
+# ====== 3️⃣ 縮放 (Scaling) ======
+scaled1 = cv2.resize(img, None, fx=0.5, fy=0.5)
+scaled2 = cv2.resize(img, None, fx=0.25, fy=0.25)
+scaled3 = cv2.resize(img, None, fx=2, fy=2)
+
+tx, ty = 0, 0
+M_translate = np.float32([[1, 0, tx],
+                          [0, 1, ty]])
+
+sscaled1 = cv2.warpAffine(scaled1,M_translate, (w, h))
+sscaled2 = cv2.warpAffine(scaled2,M_translate, (w, h))
+sscaled3 = cv2.warpAffine(scaled3,M_translate, (w, h))
+
+# ====== 顯示結果 ======
+titles = ['Original', 'Scaled 0.5,0.5', 'Scaled 0.25,0.25', 'Scaled 2,2']
+images = [img, sscaled1, sscaled2, sscaled3]
+
+plt.figure(figsize=(10,4))
+for i in range(4):
+    plt.subplot(1,4,i+1)
+    plt.imshow(images[i])
+    plt.title(titles[i])
+    plt.axis('off')
+plt.tight_layout()
+plt.show()
+```
+
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="show3.jpg" /><br>
+
+<hr><hr>
+
+====================================================<br>
+#### 仿射變換 (Affine Transform) 練習
+====================================================<br>
+```python
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+
+# 讀取影像
+img = cv2.imread('lenna.jpg')  # 可改成自己的影像路徑
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # 轉成RGB方便顯示
+
+h, w = img.shape[:2]
+
+# ====== 4️⃣ 仿射變換 (Affine Transform) ======
+# 三組對應點
+pts1 = np.float32([[50, 50], [200, 50], [50, 200]])
+pts2 = np.float32([[10, 100], [200, 50], [100, 250]])
+M_affine1 = cv2.getAffineTransform(pts1, pts2)
+affined1 = cv2.warpAffine(img, M_affine1, (w, h))
+
+pts1 = np.float32([[10, 100], [200, 50], [100, 250]])
+pts2 = np.float32([[50, 50], [200, 50], [50, 200]])
+M_affine2 = cv2.getAffineTransform(pts1, pts2)
+affined2 = cv2.warpAffine(img, M_affine2, (w, h))
+
+pts1 = np.float32([[200, 50], [50, 200], [50, 50]])
+pts2 = np.float32([[100, 250], [10, 100], [200, 50]])
+M_affine3 = cv2.getAffineTransform(pts1, pts2)
+affined3 = cv2.warpAffine(img, M_affine3, (w, h))
+
+
+# ====== 顯示結果 ======
+titles = ['Original', 'Affine1', 'Affine2', 'Affine3']
+images = [img, affined1, affined2, affined3]
+
+plt.figure(figsize=(10,4))
+for i in range(4):
+    plt.subplot(1,4,i+1)
+    plt.imshow(images[i])
+    plt.title(titles[i])
+    plt.axis('off')
+plt.tight_layout()
+plt.show()
+```
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="show4.jpg" /><br>
+
+<hr><hr>
+
+
+====================================================<br>
+#### 透視變換 (Perspective Transform) 練習
+====================================================<br>
+```python
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+
+# 讀取影像
+img = cv2.imread('lenna.jpg')  # 可改成自己的影像路徑
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # 轉成RGB方便顯示
+
+h, w = img.shape[:2]
+
+# ====== 5️⃣ 透視變換 (Perspective Transform) ======
+# 四組對應點
+pts1 = np.float32([[50, 50], [450, 50], [50, 300], [450, 300]])
+pts2 = np.float32([[10, 100], [480, 50], [100, 350], [400, 300]])
+M_perspective = cv2.getPerspectiveTransform(pts1, pts2)
+perspective1 = cv2.warpPerspective(img, M_perspective, (w, h))
+
+pts1 = np.float32([[10, 100], [480, 50], [100, 350], [400, 300]])
+pts2 = np.float32([[50, 50], [450, 50], [50, 300], [450, 300]])
+M_perspective = cv2.getPerspectiveTransform(pts1, pts2)
+perspective2 = cv2.warpPerspective(img, M_perspective, (w, h))
+
+pts1 = np.float32([[450, 300],[50, 300],[450, 50],[50, 50]])
+pts2 = np.float32([[100, 350],[400, 300],[10, 100],[480, 50]])
+M_perspective = cv2.getPerspectiveTransform(pts1, pts2)
+perspective3 = cv2.warpPerspective(img, M_perspective, (w, h))
+
+# ====== 顯示結果 ======
+titles = ['Original', 'Perspective1', 'Perspective2', 'Perspective3']
+images = [img, perspective1, perspective2, perspective3]
+
+plt.figure(figsize=(10,4))
+for i in range(4):
+    plt.subplot(1,4,i+1)
+    plt.imshow(images[i])
+    plt.title(titles[i])
+    plt.axis('off')
+plt.tight_layout()
+plt.show()
+```
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="show5.jpg" /><br>
+
+<hr><hr>
+
+====================================================<br>
+#### 影像平移、旋轉、縮放、仿射變換、透視變換 練習
+====================================================<br>
+```python
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+
+# 讀取影像
+img = cv2.imread('lenna.jpg')  # 可改成自己的影像路徑
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # 轉成RGB方便顯示
+
+h, w = img.shape[:2]
+
+# ====== 1️⃣ 平移 (Translation) ======
+tx, ty = 100, 50  # x向右移100, y向下移50
+M_translate = np.float32([[1, 0, tx],
+                          [0, 1, ty]])
+translated = cv2.warpAffine(img, M_translate, (w, h))
+
+# ====== 2️⃣ 旋轉 (Rotation) ======
+angle = 45
+scale = 1.0
+M_rotate = cv2.getRotationMatrix2D((w//2, h//2), angle, scale)
+rotated = cv2.warpAffine(img, M_rotate, (w, h))
+
+# ====== 3️⃣ 縮放 (Scaling) ======
+scaled = cv2.resize(img, None, fx=0.5, fy=0.5)
+
+# ====== 4️⃣ 仿射變換 (Affine Transform) ======
+# 三組對應點
+pts1 = np.float32([[50, 50], [200, 50], [50, 200]])
+pts2 = np.float32([[10, 100], [200, 50], [100, 250]])
+M_affine = cv2.getAffineTransform(pts1, pts2)
+affined = cv2.warpAffine(img, M_affine, (w, h))
+
+# ====== 5️⃣ 透視變換 (Perspective Transform) ======
+# 四組對應點
+pts1 = np.float32([[50, 50], [450, 50], [50, 300], [450, 300]])
+pts2 = np.float32([[10, 100], [480, 50], [100, 350], [400, 300]])
+M_perspective = cv2.getPerspectiveTransform(pts1, pts2)
+perspective = cv2.warpPerspective(img, M_perspective, (w, h))
+
+# ====== 顯示結果 ======
+titles = ['Original', 'Translated', 'Rotated', 'Scaled', 'Affine', 'Perspective']
+images = [img, translated, rotated, scaled, affined, perspective]
+
+plt.figure(figsize=(12,8))
+for i in range(6):
+    plt.subplot(2,3,i+1)
+    plt.imshow(images[i])
+    plt.title(titles[i])
+    plt.axis('off')
+plt.tight_layout()
+plt.show()
+```
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="example1.jpg" /><br>
+
+<hr><hr>
