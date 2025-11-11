@@ -136,12 +136,14 @@ mjpg-streamer/mjpg-streamer-experimental
 執行結果
 
 <hr>
-<img src="streamer.jpg" />
+
+<img src="streamer.jpg"  width=600 height=500  />
 
 <br>
 =============================================<br>
-## 動態影像網頁
+## 動態影像網頁 <br>
 =============================================<br>
+
 ``` html
 <html>
 <h2>動態影像如下</h2><br>
@@ -153,13 +155,14 @@ mjpg-streamer/mjpg-streamer-experimental
 
 <hr>
 
-<img src="html1.jpg" />
+<img src="html1.jpg"  width=600 height=500 />
 <br>
 
 <br>
 =============================================<br>
-## 靜態網頁
+## 靜態網頁 <br>
 =============================================<br>
+
 ``` html
 <html>
 <h2>靜態影像如下</h2> <input type="button" value="更新影像" onclick="location.reload()" />
@@ -172,13 +175,14 @@ mjpg-streamer/mjpg-streamer-experimental
 
 <hr>
 
-<img src="html2.jpg" />
+<img src="html2.jpg" width=600 height=500 />
 <br>
 
 <br>
 =============================================<br>
-## 自動捕捉網頁
+## 自動捕捉網頁 <br>
 =============================================<br>
+
 ``` html
 <html>
   <head>
@@ -203,7 +207,7 @@ mjpg-streamer/mjpg-streamer-experimental
 
 <hr>
 
-<img src="html3.jpg" />
+<img src="html3.jpg"  width=600 height=500  />
 <br>
 
 
