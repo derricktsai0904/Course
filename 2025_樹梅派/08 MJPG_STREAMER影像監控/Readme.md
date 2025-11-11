@@ -36,6 +36,8 @@ MJPG-Streamer 是一個輕量級的應用程式，主要用於從 V4L2 (Video4Li
 
 ## MJPG-STREAMER 安裝步驟 <br>
 
+<hr>
+
 ### 步驟一：安裝編譯環境與相依套件
 由於 MJPG-Streamer 通常需要從原始碼編譯安裝，我們需要先安裝必要的開發工具和函式庫，特別是 libjpeg 和 V4L2 (Video for Linux Two) 相關套件。
 這樣您就可以在不增加 AIOT Server 負擔的前提下，將 Pi3 的即時影像整合到您的雲端平台中。
