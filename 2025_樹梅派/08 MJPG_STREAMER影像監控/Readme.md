@@ -1,4 +1,21 @@
 
+## 坊間常見的串流影像規格
+三個影像串流架構（RTSP、ONVIF、MJPG-streamer）雖然都能讓你「看到影像串流」，但它們的架構、協定層級、用途、相容性都大不相同。
+
+### 一、三種架構的層級比較<br>
+<img src="table.jpg" width=800 height=600 /><br>
+
+### 二、三種格式的比較<br>
+<img src="summary.jpg" /><br>
+
+### 三、架構圖比較<br>
+<img src="compare-structure.jpg" /><br>
+
+
+<hr>
+
+
+<br><br>
 ## MJPG-STREAMER 影像函式
 
 #### MJPG-Streamer 介紹與應用
