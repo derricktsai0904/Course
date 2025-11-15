@@ -1,5 +1,3 @@
-
-
 ### 何謂人工智慧
 「人工智慧」（Artificial Intelligence，簡稱 AI）是指讓機器具備類似人類智慧的能力，能夠思考、學習、推理、理解與解決問題的一種技術與科學。
 
@@ -15,7 +13,7 @@
 <hr>
 
 #### 二、人工智慧的演進歷史 <br>
-<img src="https://github.com/derricktsai0904/Course/tree/main/2025.11%20%E6%99%AE%E5%8F%B0%E9%AB%98%E4%B8%ADAI/2025.11.08/history.jpg"  width=800 height=600  /><br>
+<img src="history.jpg"  width=800 height=600  /><br>
 (圖片來自 https://blog.tibame.com/ )
 <br><br>
 
@@ -36,7 +34,7 @@
 
 <hr>
 
-<img src="https://github.com/derricktsai0904/Course/tree/main/2025.11%20%E6%99%AE%E5%8F%B0%E9%AB%98%E4%B8%ADAI/2025.11.08/structure.jpg"  width=800 height=600  /><br><br>
+<img src="structure.jpg"  width=800 height=600  /><br><br>
 
 <hr>
 
@@ -65,7 +63,7 @@
 ##### ImageNet是一個用於視覺物件識別軟體研究的大型視覺化資料庫，由斯坦福大學的李飛飛教授及其團隊于2009年發佈。該專案旨在促進電腦視覺和機器學習技術在更廣泛和更具挑戰性的物件類別上的研究和開發。<br>
 
 <br>
-<img src="https://github.com/derricktsai0904/Course/tree/main/2025.11%20%E6%99%AE%E5%8F%B0%E9%AB%98%E4%B8%ADAI/2025.11.08/imagenet.jpg" />
+<img src="imagenet.jpg" />
 
 <br>
 
@@ -87,7 +85,7 @@ ImageNet 大規模視覺辨識挑戰賽 (ImageNet Large Scale Visual Recognition
 <br>
 
 AlexNet (八層神經網絡)<br>
-<img src="https://github.com/derricktsai0904/Course/tree/main/2025.11%20%E6%99%AE%E5%8F%B0%E9%AB%98%E4%B8%ADAI/2025.11.08/human.jpg" />
+<img src="human.jpg" />
 
 <br>
 
@@ -155,3 +153,4 @@ https://teachablemachine.withgoogle.com/<br><br>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=vM7n9k_7go8" target="_blank"><img src="http://img.youtube.com/vi/vM7n9k_7go8/0.jpg" 
 alt="Nx應用人工智慧" width="400" height="250" border="10" /></a>
 <br>影片取自 youtube
+
