@@ -9,7 +9,7 @@ https://download.mobatek.net/2532025092512146/MobaXterm_Portable_v25.3.zip
 <img src="m1.jpg" width=600 height=400 /> <br>
 
 然後請新建一個 session ，設定您樹梅派的 Host Name，以及登入的帳號密碼。就可以開始使用。<br>
-<img src="m1.jpg" width=600 height=400> <br>
+<img src="m2.jpg" width=600 height=400> <br>
 
 
 
