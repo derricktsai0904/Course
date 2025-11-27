@@ -18,10 +18,99 @@ https://download.mobatek.net/2532025092512146/MobaXterm_Portable_v25.3.zip
 #### 整體而言，Haar Cascade 的架構兼具高速與可行性，是早期人臉偵測的代表性模型。
 
 
-sudo apt update
-sudo apt install -y python3-opencv
+## 樹梅派環境設定方式
 
-sudo apt update
+### 步驟一 : 安裝 OpenCV 函式庫
+sudo apt update <br>
+sudo apt install -y python3-opencv <br>
+
+### 步驟二 : 安裝 picamera2 模組(選用)
 sudo apt install python3-picamera2
 
+### 步驟三 : 下載 haarcascade 模型 ( 原先安裝的 Open CV 函式可能沒有包含這個模型，需要手動下載檔案)
 wget https://github.com/opencv/opencv/raw/master/data/haarcascades/haarcascade_frontalface_default.xml
+
+########################################### <br>
+使用 Open CV 的人臉偵測練習 ( 將人臉圈起來 )
+########################################### <br>
+``` Python
+from picamera2 import Picamera2
+import cv2
+
+picam2 = Picamera2()
+preview_config = picam2.create_preview_configuration(main={"format": "RGB888", "size": (640, 480)})
+picam2.configure(preview_config)
+picam2.start()
+
+face_cascade = cv2.CascadeClassifier("/home/user/python/haarcascades/haarcascade_frontalface_default.xml")
+
+while True:
+    frame = picam2.capture_array()
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    faces = face_cascade.detectMultiScale(gray, 1.3, 5, minSize=(30, 30))
+    for (x, y, w, h) in faces:
+        cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+    cv2.imshow("Face Detection", frame)
+    if cv2.waitKey(1) == 27:
+        break
+
+cv2.destroyAllWindows()
+picam2.close()
+
+```
+
+
+
+
+########################################### <br>
+使用 Open CV 的人臉偵測練習 ( 除了人臉以外，再加上語音播放)
+########################################### <br>
+``` Python
+from picamera2 import Picamera2
+import cv2
+import time
+import threading
+from pygame import mixer  
+
+mixer.init()
+ALERT_SOUND = "/home/user/python/voice.mp3" 
+
+def play_alert():
+    mixer.music.load(ALERT_SOUND)
+    mixer.music.play()
+
+face_cascade = cv2.CascadeClassifier("/home/user/python/haarcascades/haarcascade_frontalface_default.xml")
+
+
+picam2 = Picamera2()
+preview_config = picam2.create_preview_configuration(main={"format": "RGB888", "size": (640, 480)})
+picam2.configure(preview_config)
+picam2.start()
+
+ALERT_COOLDOWN = 6
+last_alert_time = 0
+
+print("press ESC to exit")
+
+while True:
+    frame = picam2.capture_array()
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    faces = face_cascade.detectMultiScale(gray, 1.3, 5, minSize=(30, 30))
+
+    for (x, y, w, h) in faces:
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+
+    if len(faces) > 0 and (time.time() - last_alert_time) > ALERT_COOLDOWN:
+        threading.Thread(target=play_alert).start()
+        last_alert_time = time.time()
+
+
+    cv2.imshow("Face Detection", frame)
+
+    if cv2.waitKey(1) == 27:
+        break
+
+cv2.destroyAllWindows()
+picam2.close()
+
+```
