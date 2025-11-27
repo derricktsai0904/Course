@@ -6,10 +6,10 @@
 https://download.mobatek.net/2532025092512146/MobaXterm_Portable_v25.3.zip
 
 以上為免安裝版本，下載之後請解壓縮，然後執行 MobaXterm_Personal_25.3.exe 的執行檔案，然後開啟如下圖畫面。<br>
-<img src="m1.jpg"> <br>
+<img src="m1.jpg" width=600 height=400 /> <br>
 
 然後請新建一個 session ，設定您樹梅派的 Host Name，以及登入的帳號密碼。就可以開始使用。<br>
-<img src="m1.jpg"> <br>
+<img src="m1.jpg" width=600 height=400> <br>
 
 
 
