@@ -194,7 +194,7 @@ picam2.close()
 =========================================================================================<br>
 ### 執行結果 <br>
 =========================================================================================<br>
-### 人臉偵測 加上 語音提示
+### 人臉偵測 加上 馬賽克
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Lz8Omp94_Ps" target="_blank"><img src="http://img.youtube.com/vi/Lz8Omp94_Ps/0.jpg" 
 alt="人臉偵測 加上 語音提示" width="400" height="250" border="10" /></a>
