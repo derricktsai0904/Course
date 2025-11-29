@@ -34,7 +34,23 @@ sudo apt install -y python3-opencv <br>
 sudo apt install python3-picamera2
 
 ### 步驟三 : 下載 haarcascade 模型 ( 原先安裝的 Open CV 函式可能沒有包含這個模型，需要手動下載檔案)
-wget https://github.com/opencv/opencv/raw/master/data/haarcascades/haarcascade_frontalface_default.xml
+wget https://github.com/opencv/opencv/raw/master/data/haarcascade_frontalface_default.xml
+
+### 問題排除
+如果 picamera2 呼叫有遇到問題，請照一下步驟試看看。
+```
+請各位執行以下指令
+sudo nano /boot/firmware/config.txt
+
+找到以下字串
+#camera_auto_detect=1
+start_x=1
+
+把#camera_auto_detect=1 的#拿掉  把 start_x=1 用 # mark 起來
+變成以下這樣
+camera_auto_detect=1
+#start_x=1
+```
 
 =========================================================================================<br>
 ### 使用 Open CV 的人臉偵測練習 ( 將人臉圈起來 ) <br>
@@ -49,7 +65,7 @@ preview_config = picam2.create_preview_configuration(main={"format": "RGB888", "
 picam2.configure(preview_config)
 picam2.start()
 
-face_cascade = cv2.CascadeClassifier("/home/user/python/haarcascades/haarcascade_frontalface_default.xml")
+face_cascade = cv2.CascadeClassifier("/home/user/python/haarcascade_frontalface_default.xml")
 
 while True:
     frame = picam2.capture_array()
@@ -97,7 +113,7 @@ def play_alert():
     mixer.music.load(ALERT_SOUND)
     mixer.music.play()
 
-face_cascade = cv2.CascadeClassifier("/home/user/python/haarcascades/haarcascade_frontalface_default.xml")
+face_cascade = cv2.CascadeClassifier("/home/user/python/haarcascade_frontalface_default.xml")
 
 
 picam2 = Picamera2()
