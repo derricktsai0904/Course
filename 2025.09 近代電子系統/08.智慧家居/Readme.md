@@ -56,6 +56,12 @@ alt="遠端控制" width="400" height="250" border="10" /></a>
 洗衣機/烘乾機：可遠端啟動與監控洗衣進度。<br>
 掃地機器人：自動清掃地板，並能設定清掃時間與路線。<br>
 
+#### 智慧家電 介紹 <br>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=AdhxeTVVlO0" target="_blank"><img src="http://img.youtube.com/vi/AdhxeTVVlO0/0.jpg" 
+alt="智慧家電" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube<br>
+
+
 ### 5. 語音與自動化控制<br>
 語音助理：如Google Home、Amazon Alexa，可控制燈光、家電、播放音樂。<br>
 場景自動化：例如「離家模式」自動關閉燈光、調低溫度、鎖門。<br>
