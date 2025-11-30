@@ -36,6 +36,21 @@ alt="智能門鎖" width="400" height="250" border="10" /></a>
 能源監控：監控電器耗電量，提供節能建議。<br>
 遠端控制：在回家前就透過手機設定室內溫度。<br>
 
+#### 智能恆溫器 介紹 <br>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=jwDAC3zjkHU" target="_blank"><img src="http://img.youtube.com/vi/jwDAC3zjkHU/0.jpg" 
+alt="智能恆溫器" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube<br>
+
+#### 能源監控 介紹 <br>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=U2aH1HItZ-E" target="_blank"><img src="http://img.youtube.com/vi/U2aH1HItZ-E/0.jpg" 
+alt="能源監控" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube<br>
+
+#### 遠端控制 介紹 <br>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=HqDwURVajuI" target="_blank"><img src="http://img.youtube.com/vi/HqDwURVajuI/0.jpg" 
+alt="遠端控制" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube<br>
+
 ### 4. 智慧家電<br>
 冰箱：能追蹤食材存量，甚至提供食譜建議。<br>
 洗衣機/烘乾機：可遠端啟動與監控洗衣進度。<br>
