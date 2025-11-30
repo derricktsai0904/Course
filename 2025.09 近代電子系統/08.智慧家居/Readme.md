@@ -5,11 +5,23 @@
 遠端控制：透過手機APP或語音助理開關燈。<br>
 情境模式：設定「閱讀模式」、「電影模式」等自動調整燈光色溫與亮度。<br>
 
+#### 智慧照明 介紹 <br>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=cYQfRwnMCrI" target="_blank"><img src="http://img.youtube.com/vi/cYQfRwnMCrI/0.jpg" 
+alt="智慧照明" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube<br>
+
 ### 2. 智慧安全系統<br>
 監控攝影機：即時影像監控，可遠端查看家中狀況。<br>
 門窗感應器：異常開啟通知手機。<br>
 智能門鎖：可透過指紋、密碼或手機App開鎖，並記錄進出紀錄。<br>
 警報系統：當偵測到入侵或煙霧時自動通知住戶與警察。<br>
+
+#### 監控攝影機 介紹 <br>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=_iz87R5S0yg" target="_blank"><img src="http://img.youtube.com/vi/_iz87R5S0yg/0.jpg" 
+alt="監控攝影機" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube<br>
+
+
 
 ### 3. 智慧溫控與能源管理<br>
 智能恆溫器：自動調整空調或暖氣，依照使用者習慣節能。<br>
