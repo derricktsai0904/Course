@@ -21,7 +21,15 @@ alt="智慧照明" width="400" height="250" border="10" /></a>
 alt="監控攝影機" width="400" height="250" border="10" /></a>
 <br>影片取自 youtube<br>
 
+#### 門窗感應器 介紹 <br>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=qC8-Li3x3Rg" target="_blank"><img src="http://img.youtube.com/vi/qC8-Li3x3Rg/0.jpg" 
+alt="門窗感應器" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube<br>
 
+#### 智能門鎖 介紹 <br>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=hqWX7KTMmLc" target="_blank"><img src="http://img.youtube.com/vi/hqWX7KTMmLc/0.jpg" 
+alt="智能門鎖" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube<br>
 
 ### 3. 智慧溫控與能源管理<br>
 智能恆溫器：自動調整空調或暖氣，依照使用者習慣節能。<br>
