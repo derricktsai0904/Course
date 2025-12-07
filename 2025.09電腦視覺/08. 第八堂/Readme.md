@@ -1,19 +1,33 @@
+<hr>
+
 # 人臉辨識及車牌辨識
+
+<hr><hr>
 
 ## 註冊 Kaggle 網站帳號 <br>
 請登入 https://www.kaggle.com <br>
 
+<hr>
+
 如下圖請點選 Register <br>
 <img src="signup.jpg" width=600 height=400 /> <br>
+
+<hr>
 
 如下圖請選擇 Register with Google <br>
 <img src="acc.jpg" width=600 height=400  /> <br>
 
-Haar Cascade 人臉辨識（偵測）說明
+<hr>
+
+## Haar Cascade 人臉辨識（偵測）說明
+
+<hr>
 
 Haar Cascade 是 OpenCV 中最早、最常見的 人臉偵測模型。 <br>
 它屬於 傳統電腦視覺方法（非深度學習），由 Paul Viola 與 Michael Jones 在 2001 年提出。 <br>
 其核心目標是：從影像中找到可能是人臉的區域。<br>
+
+<br><br><br><br>
 
 ## 1.Haar Cascade 的核心概念 <br>
 ### ✔ (1) Haar-like Features （Haar 特徵） <br>
@@ -67,6 +81,58 @@ Haar Cascade 是 OpenCV 中最早、最常見的 人臉偵測模型。 <br>
 >| 偶爾會出現誤判（false positive）
 
 <hr>
+
+## 📌 總結 <br>
+#### Haar Cascade 是一種：傳統的機器視覺人臉偵測方法 <br>
+#### 使用 Haar 特徵 + AdaBoost + 層級分類器 <br>
+#### 速度快、資源需求低 <br>
+#### 但準確度比不上深度學習方法 <br>
+### 因此，它仍然非常適合在教學環境、嵌入式裝置、基礎人臉偵測應用中使用。 <br>
+
+<hr>
+
+====================================================<br>
+#### 人臉辨識範例 <br>
+====================================================<br>
+```python
+
+import cv2
+import matplotlib.pyplot as plt
+
+# 讀取影像
+img = cv2.imread("/kaggle/input/person4/other/default/1/p4.jpg")  # ★☆★☆★☆ 請改為您的圖檔路徑
+img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+# 載入人臉 Haar Cascade
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+
+# 偵測人臉
+faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30,30))
+
+# 繪製人臉框
+img_faces = img_rgb.copy()
+for (x, y, w, h) in faces:
+    cv2.rectangle(img_faces, (x, y), (x+w, y+h), (0, 255, 0), 2)
+
+# 顯示結果
+plt.figure(figsize=(10,8))
+plt.imshow(img_faces)
+plt.title(f"Detected Faces: {len(faces)}")
+plt.axis("off")
+plt.show()
+
+```
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="face2.jpg" /><br>
+
+<hr><hr>
+
 
 
 
