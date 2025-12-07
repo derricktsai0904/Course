@@ -136,4 +136,98 @@ plt.show()
 
 
 
+====================================================<br>
+#### 車牌辨識範例 <br>
+#### 輸入圖檔，請下載 license1.jpg、license2.jpg、license3.jpg
+====================================================<br>
+```python
+import cv2
+import pytesseract
+import matplotlib.pyplot as plt
+
+# 載入影像
+img1 = cv2.imread("/kaggle/input/license7/other/default/1/license1.jpg")
+img2 = cv2.imread("/kaggle/input/license7/other/default/1/license2.jpg")
+img3 = cv2.imread("/kaggle/input/license7/other/default/1/license3.jpg")
+
+gray1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
+gray2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
+gray3 = cv2.cvtColor(img3, cv2.COLOR_BGR2GRAY)
+
+# 高斯模糊 + 邊緣檢測
+blur1 = cv2.GaussianBlur(gray1, (5,5), 0)
+blur2 = cv2.GaussianBlur(gray2, (5,5), 0)
+blur3 = cv2.GaussianBlur(gray3, (5,5), 0)
+
+edges1 = cv2.Canny(blur1, 50, 200)
+edges2 = cv2.Canny(blur2, 50, 200)
+edges3 = cv2.Canny(blur3, 50, 200)
+
+# 找輪廓
+contours1, _ = cv2.findContours(edges1, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+plate_img1 = None
+for cnt in contours1:
+    x, y, w, h = cv2.boundingRect(cnt)
+    ratio = w / float(h)
+    if 2 < ratio < 5:  # 車牌大約長寬比
+        plate_img1 = gray1[y:y+h, x:x+w]
+        cv2.rectangle(img1, (x,y), (x+w, y+h), (0,255,0), 2)
+        break
+
+contours2, _ = cv2.findContours(edges2, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+plate_img2 = None
+for cnt in contours2:
+    x, y, w, h = cv2.boundingRect(cnt)
+    ratio = w / float(h)
+    if 2 < ratio < 5:  # 車牌大約長寬比
+        plate_img2 = gray2[y:y+h, x:x+w]
+        cv2.rectangle(img2, (x,y), (x+w, y+h), (0,255,0), 2)
+        break
+
+contours3, _ = cv2.findContours(edges3, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+plate_img3 = None
+for cnt in contours3:
+    x, y, w, h = cv2.boundingRect(cnt)
+    ratio = w / float(h)
+    if 2 < ratio < 5:  # 車牌大約長寬比
+        plate_img3 = gray3[y:y+h, x:x+w]
+        cv2.rectangle(img3, (x,y), (x+w, y+h), (0,255,0), 2)
+        break
+
+text1 = pytesseract.image_to_string(plate_img1, config='--psm 7')
+text2 = pytesseract.image_to_string(plate_img2, config='--psm 7')
+text3 = pytesseract.image_to_string(plate_img3, config='--psm 7')
+
+plt.figure(figsize=(12,4))
+plt.subplot(1,3,1)
+plt.title('plate no:' + text1.strip())
+plt.imshow(img1)
+plt.axis('off')
+
+plt.subplot(1,3,2)
+plt.title('plate no:' + text2.strip())
+plt.imshow(img2)
+plt.axis('off')
+
+plt.subplot(1,3,3)
+plt.title('plate no:' + text3.strip())
+plt.imshow(img3)
+plt.axis('off')
+
+plt.show()
+```
+<br>
+<hr>
+===========
+執行結果
+===========
+
+<img src="license.jpg" width=600 height=400  /><br>
+
+<hr><hr>
+
+
+
+
+
 
