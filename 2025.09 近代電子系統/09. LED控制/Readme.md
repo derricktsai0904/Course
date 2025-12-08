@@ -38,7 +38,7 @@ void loop() { //Arduino 主要迴圈，執行無窮多次，直到關機為主
 <h1>【練習題目 : 霹靂燈 控制】</h1><br>
 
 ## 電路圖說明 <br>
-<img src="LED5.jpg" width=600 height=400 />
+<img src="https://github.com/1104405103/Course/blob/main/%E5%85%89%E5%95%9F%E9%AB%98%E4%B8%AD/2025_%E9%9B%BB%E6%A9%9F%E4%B8%89%E5%BF%A0/2025.11.16/LED5.jpg" width=600 height=400 />
 
 ## 程式說明
 
