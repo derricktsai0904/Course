@@ -134,6 +134,68 @@ plt.show()
 
 <hr><hr>
 
+
+====================================================<br>
+#### 人臉辨識 + 馬賽克範例 <br>
+#### 輸入圖檔，請下載 p4.jpg
+====================================================<br>
+```python
+import cv2
+import matplotlib.pyplot as plt
+
+# 讀取影像
+img = cv2.imread("/kaggle/input/person4/other/default/1/p4.jpg")  # 請改為您的圖檔路徑
+img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+# 載入人臉 Haar Cascade
+face_cascade = cv2.CascadeClassifier(
+    cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
+)
+
+# 偵測人臉
+faces = face_cascade.detectMultiScale(
+    gray,
+    scaleFactor=1.1,
+    minNeighbors=5,
+    minSize=(30, 30)
+)
+
+# 複製影像以進行處理
+img_mosaic = img_rgb.copy()
+
+# 對每張人臉進行馬賽克處理
+for (x, y, w, h) in faces:
+    face_roi = img_mosaic[y:y+h, x:x+w]
+
+    # ↓ 馬賽克強度（數值越小，馬賽克越粗）
+    mosaic_size = 10
+
+    # 縮小再放大（產生馬賽克效果）
+    face_small = cv2.resize(
+        face_roi,
+        (w // mosaic_size, h // mosaic_size),
+        interpolation=cv2.INTER_LINEAR
+    )
+    face_mosaic = cv2.resize(
+        face_small,
+        (w, h),
+        interpolation=cv2.INTER_NEAREST
+    )
+
+    # 將馬賽克臉貼回原圖
+    img_mosaic[y:y+h, x:x+w] = face_mosaic
+
+# 顯示結果
+plt.figure(figsize=(10, 8))
+plt.imshow(img_mosaic)
+plt.title(f"Mosaic Faces: {len(faces)}")
+plt.axis("off")
+plt.show()
+```
+
+
+
 ===========================================================================================================================
 
 <hr>
