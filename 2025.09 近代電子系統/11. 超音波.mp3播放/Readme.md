@@ -18,7 +18,7 @@
 
 >![](https://github.com/derricktsai0904/Arduino/blob/master/03%20Arduino%20%E9%80%B2%E9%9A%8E%E5%AF%A6%E4%BD%9C%E7%AF%84%E4%BE%8B/03%20%E8%AA%9E%E9%9F%B3%E6%92%AD%E6%94%BE/DFPlayer_Mini.JPG?raw=true)
 
-## KY-037 聲音感測器腳位圖
+## HC-SR04 超音波感測器腳位圖
 
 >![](https://github.com/derricktsai0904/Arduino/blob/master/03%20Arduino%20%E9%80%B2%E9%9A%8E%E5%AF%A6%E4%BD%9C%E7%AF%84%E4%BE%8B/03%20%E8%AA%9E%E9%9F%B3%E6%92%AD%E6%94%BE/md-ky-037.jpg?raw=true)
 
