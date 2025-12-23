@@ -24,7 +24,7 @@
 
 ## 超音波距離感測+語音播放控制電路圖
 
-<img src="https://github.com/derricktsai0904/Course/blob/main/2025.09%20%E8%BF%91%E4%BB%A3%E9%9B%BB%E5%AD%90%E7%B3%BB%E7%B5%B1/11.%20%E8%B6%85%E9%9F%B3%E6%B3%A2.mp3%E6%92%AD%E6%94%BE/playmp3.jpg"  width=800 height=600 />
+<img src="https://github.com/derricktsai0904/Course/blob/main/2025.09%20%E8%BF%91%E4%BB%A3%E9%9B%BB%E5%AD%90%E7%B3%BB%E7%B5%B1/11.%20%E8%B6%85%E9%9F%B3%E6%B3%A2.mp3%E6%92%AD%E6%94%BE/playmp3_2.jpg"  width=800 height=600 />
 
 ## 相關函式 : 無
 >1. Arduino.h
