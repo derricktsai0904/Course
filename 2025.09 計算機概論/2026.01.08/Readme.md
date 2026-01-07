@@ -1,7 +1,23 @@
-計算機概論 問卷調查 評分
 
-<img src="qrcode_1C.png" width=600 height=400 > <br>
+食
+<hr>
+<img src="q1.jpg" width=100 height=100 ><br>
 
+衣
+<hr>
+<img src="q5.jpg" width=100 height=100 ><br>
+
+住
+<hr>
+<img src="q4.jpg" width=100 height=100 ><br>
+
+行
+<hr>
+<img src="q3.jpg" width=100 height=100 ><br>
+
+樂
+<hr>
+<img src="q2.jpg" width=100 height=100 ><br>
 
 
 教學影片
@@ -46,6 +62,8 @@ https://www.youtube.com/watch?v=P9nWPWushdY
 > ◎ 我的生活品質符合自己的期待 <br>
 > ◎ 整體來說，我對目前的生活狀況感到滿意 <br>
 
+計算機概論 問卷調查 評分
+<img src="qrcode_1C.png" width=400 height=400 > <br>
 
 
 
