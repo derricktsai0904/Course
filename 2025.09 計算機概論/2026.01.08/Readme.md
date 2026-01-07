@@ -1,3 +1,9 @@
+計算機概論 問卷調查 評分
+
+<img src="qrcode_1c.png" width=600 height=400 > <br>
+
+
+
 教學影片
 https://www.youtube.com/watch?v=P9nWPWushdY
 
