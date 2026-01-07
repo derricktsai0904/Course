@@ -1,6 +1,6 @@
 計算機概論 問卷調查 評分
 
-<img src="qrcode_1c.png" width=600 height=400 > <br>
+<img src="qrcode_1C.png" width=600 height=400 > <br>
 
 
 
