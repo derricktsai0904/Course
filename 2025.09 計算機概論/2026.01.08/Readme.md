@@ -1,22 +1,17 @@
 
 食
-<hr>
 <img src="q1.jpg" width=100 height=100 ><br>
 
 衣
-<hr>
 <img src="q5.jpg" width=100 height=100 ><br>
 
 住
-<hr>
-<img src="q4.jpg" width=100 height=100 ><br>
+<img src="q4.png" width=100 height=100 ><br>
 
 行
-<hr>
-<img src="q3.jpg" width=100 height=100 ><br>
+<img src="q3.png" width=100 height=100 ><br>
 
 樂
-<hr>
 <img src="q2.jpg" width=100 height=100 ><br>
 
 
