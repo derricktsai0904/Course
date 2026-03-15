@@ -100,7 +100,7 @@ h1 的字型最大，h2 次之，以此類推。 <br>
 可以參考以下兩種方式 <br>
 <img src="GithubEdit3.jpg" width="600" height="300" />
 
-</detail>
+</details>
 
 
 <details>
