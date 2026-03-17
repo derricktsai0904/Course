@@ -9,7 +9,7 @@ alt="AI 發展史" width="400" height="250" border="10" /></a>
 
 
 # Github 說明連結頁面 QRCODE
-<img src="AI_qrcode.png" width="150" Height="150" />
+<img src="qrcode2.png" width="150" Height="150" />
 <br>
 
 # Github 說明
