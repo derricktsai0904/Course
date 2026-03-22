@@ -8,6 +8,7 @@
 <hr>
 網頁程式碼
 <hr>
+
 ``` 網頁程式碼
 <!DOCTYPE html>
 <html lang="zh-TW">
@@ -82,6 +83,7 @@ C：<input type="number" id="C"><br><br>
 <hr>
 Python 程式碼
 <hr>
+
 ```Python
 # 輸入 A, B, C
 A = float(input("請輸入 A: "))
