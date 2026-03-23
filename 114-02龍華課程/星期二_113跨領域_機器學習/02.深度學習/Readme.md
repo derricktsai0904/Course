@@ -1,5 +1,4 @@
 
-https://www.youtube.com/watch?v=UGdG4WpluJ8
 
 # 機器學習與深度學習 <br>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=UGdG4WpluJ8" target="_blank"><img src="http://img.youtube.com/vi/UGdG4WpluJ8/0.jpg" 
