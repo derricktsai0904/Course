@@ -1,0 +1,17 @@
+
+https://www.youtube.com/watch?v=UGdG4WpluJ8
+
+# 機器學習與深度學習 <br>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=UGdG4WpluJ8" target="_blank"><img src="http://img.youtube.com/vi/UGdG4WpluJ8/0.jpg" 
+alt="機器學習與深度學習" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube
+
+
+參考如下語法
+``` Markdown 語法
+# 機器學習與深度學習 <br>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=UGdG4WpluJ8" target="_blank"><img src="http://img.youtube.com/vi/UGdG4WpluJ8/0.jpg" 
+alt="機器學習與深度學習" width="400" height="250" border="10" /></a>
+<br>影片取自 youtube
+```
+
