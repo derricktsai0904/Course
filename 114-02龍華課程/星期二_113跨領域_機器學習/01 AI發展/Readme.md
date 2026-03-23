@@ -153,6 +153,25 @@ Step2.下載QRCode軟體 <br>
 ### 執行 QR Code Generator 軟體
 <img src="GithubQR3.jpg" width="400" Height="400" /><br>
 
+<br><br>
+## 請製作如下的表格範例
+
+| A 組 | 姓名 | Github連結 |
+|----:|------|------|
+|組長 | 王組長 | [王組長 github](https://github.com/derricktsai0904/Arduino)|
+|組員 | 組員一 | [組員一 github](https://github.com/derricktsai0904/Arduino)|
+|組員 | 組員二 | [組員二 github](https://github.com/derricktsai0904/Arduino)|
+|組員 | 組員三 | [組員三 github](https://github.com/derricktsai0904/Arduino)|
+
+## 參考以下語法 <br>
+``` MarkDown 語法
+| A 組 | 姓名 | Github連結 |
+|----:|------|------|
+|組長 | 王組長 | [王組長 github](https://github.com/derricktsai0904/Arduino)|
+|組員 | 組員一 | [組員一 github](https://github.com/derricktsai0904/Arduino)|
+|組員 | 組員二 | [組員二 github](https://github.com/derricktsai0904/Arduino)|
+|組員 | 組員三 | [組員三 github](https://github.com/derricktsai0904/Arduino)|
+```
 </detail>
 
 
