@@ -3,5 +3,5 @@
 ### 授課班級 : 產四子二B_僑生專班
 ### 上課地點 : S315
 
-Line 群組圖片 :
-<img src="qrcode.png" />
+### Line 群組圖片 : <br>
+<img src="qrcode.jpg" />
