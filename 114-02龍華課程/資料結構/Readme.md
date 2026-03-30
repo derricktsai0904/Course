@@ -2,7 +2,16 @@
 
 以下參考 將 虛擬碼 轉入 chatgpt 產生程式碼，
 
-請參考以下虛擬碼產生網頁程式碼 "Begin 輸入 A,B,C If A > B 則 A -> Max 否則 N-> Max If C > Max 則 C -> Max Print Max End"
+請參考以下虛擬碼產生網頁程式碼 <br>
+```
+Begin
+輸入 A,B,C
+If A > B 則 A -> Max
+否則 N-> Max
+If C > Max 則 C -> Max
+Print Max
+End
+```
 
 <br><br>
 <hr>
