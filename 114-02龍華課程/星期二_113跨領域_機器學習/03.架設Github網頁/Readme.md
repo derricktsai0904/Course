@@ -59,6 +59,9 @@ JSON 和 XML 可以互相轉換，許多工具（如 CodeBeautify）提供線上
 
 <hr>
 
+<img src="QRCode.PNG"  width=400 height=400 />
+
+<hr>
 
 # 使用 Github 架設網站網頁 <br>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=uegeSwdfWjQ" target="_blank"><img src="http://img.youtube.com/vi/uegeSwdfWjQ/0.jpg" 
